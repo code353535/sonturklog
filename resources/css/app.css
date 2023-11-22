@@ -15,7 +15,7 @@
 }
 
 .sample-slider [class^="swiper-button-"]{
-    color: transparent;;
+    color: #ffffff;
     width: 20px;
 
  }
@@ -74,7 +74,7 @@
     content: "";
 }
 .sample-slider1 [class^="swiper-button-"]{
-    color: transparent;
+    color: #ffffff;
     width: 20px;
 
  }
