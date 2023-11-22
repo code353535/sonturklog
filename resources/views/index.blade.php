@@ -13,7 +13,7 @@
             alt=""
           />
           <div class="max-md:hidden absolute top-4 left-0 bg-white text-black px-2 py-1 font-bold text-xs oswald"><i class="fa-regular fa-clock mr-2"></i>GÜNDEM</div>
-          <div class="oswald absolute bottom-0 w-[400px] bg-black/30 py-3 pl-2">
+          <div class="oswald absolute bottom-0 md:w-[400px] w-full bg-black/30 py-3 pl-2">
            <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-sm text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
             <div class="text-white px-2 py-1 font-semibold text-2xl leading-6 py-1"><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link hover:underline" target="_blank"> {{ $fee->baslik }}</a>
             </div>
