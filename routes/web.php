@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use App\Livewire\Siteupdate;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\AdminuserController;
 use App\Http\Controllers\AdmincategoryController;
 use App\Http\Controllers\AdminsiteController;
 use App\Http\Controllers\SitemapController;
