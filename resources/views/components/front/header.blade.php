@@ -34,7 +34,7 @@
             <span style="--i:6" class="font-black">O</span>
             <span style="--i:7" class="font-black">G</span>
      </div>
-     <span class="font-bold text-xl max-md:textlg -rotate-90 px-2">.NET</span>
+     <span class="font-bold text-xl max-md:hidden -rotate-90 px-2">.NET</span>
     </div>
     <div class="flex flex-row items-center max-md:hidden">
         <div class="flex flex-row items-center px-2">

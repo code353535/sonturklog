@@ -176,6 +176,7 @@
         autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
         navigation: {
         nextEl: ".swiper-button-next",
