@@ -25,7 +25,7 @@
     </div>
     <div class="flex justify-between max-lg:px-4">
     <div class="flex flex-row py-1 md:py-4">
-        <div class="flex items-center waviy text-7xl max-md:text-4xl tracking-widest oswald">
+        <div class="flex items-center waviy text-6xl  tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
             <span style="--i:2" class="font-black">U</span>
             <span style="--i:3" class="font-black">R</span>
