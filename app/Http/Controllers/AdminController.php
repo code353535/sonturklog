@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Site;
 use App\Models\Feed;
-use App\Models\BOt;
+use App\Models\Bot;
 
 class AdminController extends Controller
 {
