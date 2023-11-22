@@ -25,7 +25,7 @@
     </div>
     <div class="flex justify-between max-lg:px-4">
     <div class="flex flex-row py-1 md:py-4">
-        <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
+        <div class="flex items-center waviy text-7xl max-md:text-6xl tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
             <span style="--i:2" class="font-black">U</span>
             <span style="--i:3" class="font-black">R</span>
@@ -34,7 +34,7 @@
             <span style="--i:6" class="font-black">O</span>
             <span style="--i:7" class="font-black">G</span>
      </div>
-     <span class="font-bold text-xl -rotate-90 px-2">.NET</span>
+     <span class="font-bold text-xl max-md:textlg -rotate-90 px-2">.NET</span>
     </div>
     <div class="flex flex-row items-center max-md:hidden">
         <div class="flex flex-row items-center px-2">
