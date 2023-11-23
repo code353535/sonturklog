@@ -1,6 +1,5 @@
 
-
-<div class="oswald releative w-full text-black font-bold text-lg bg-white">
+<div class="oswald releative w-full text-black font-bold text-md bg-white">
 
     <a href="/" class="block px-4 py-2 hover:text-white hover:bg-black">
         <div class="flex justify-between">

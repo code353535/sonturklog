@@ -16,6 +16,7 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\AdmintalepController;
 use App\Http\Controllers\FrontController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +38,7 @@ Route::get('/yayin-politikasi', [FrontController::class, 'yayinsartlari'])->name
 Route::post('/linksay',  [FrontController::class, 'linksay'])->name('front.linksay');
 Route::get('/detaylar/{id}/{slug}',  [FrontController::class, 'detay'])->name('front.detaylar');
 Route::get('/bloglar',  [FrontController::class, 'bloglar'])->name('front.bloglar');
+Route::get('/sitemap.xml', [SitemapController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
