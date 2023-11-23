@@ -29,7 +29,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with('category',
             $category = Category::where('anacategory_id', '1')->orderBy('ad')->get());
         });
-        view()->composer('components.front.header', function ($view) {
+        view()->composer('components.front.kategoricanvas', function ($view) {
             $view->with('anacategory',
             $AAcategory = Category::where('anacategory_id', '2')->orderBy('ad')->get());
         });

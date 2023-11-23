@@ -2,8 +2,8 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta name="title" content="Turklog.net">
-        <meta name="description" content="Türkçe web günlükleri - Gündemi ve blogları en iyi kullanıcı deneyimi ile keşfedin, takip edin.">
-        <meta name="keywords" content="turklog, blog, ">
+        <meta name="description" content="Kullanıcılarının, gündemi ve blogları , mümkün olan en iyi kullanıcı deneyimi ile takip etmelerini ve keşfetmelerini sağlayan içerik platformudur.">
+        <meta name="keywords" content="turklog, blog, haber, haberler, sondakika, news, bloglar, en iyi bloglar">
         <meta name="robots" content="index, follow">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="language" content="Turkish">

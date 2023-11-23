@@ -27,9 +27,24 @@ x-transition:leave-end="transform -translate-x-full opacity-0"
         </button>
         </div>
         </div>
+        <div class="mb-4 flex justify-center bg-black shadow-md shadow-slate-500/40">
+            <span class="py-2 bg-black text-md font-bold text-white">HABERLER</span>
+            </div>
+            <div class="releative w-full text-black">
+                @if(count($anacategory) > 0)
+                @foreach ($anacategory as $cat)
+                <div>
+                    <a href="{{ route('front.kategori',['cat' => $cat->slug]) }}" class="block px-4 py-1 text-md font-bold text-black hover:text-white  hover:bg-black">{{ $cat->ad }}</a>
+                  </div>
+                  <hr class="h-px px-6 my-1 border-1 border-solid border-gray-200">
+                  @endforeach
+                  @else
+                  Kayıt bulunamadı
+                  @endif
+            </div>
 
         <div class="mb-4 flex justify-center bg-black shadow-md shadow-slate-500/40">
-        <span class="py-2 bg-black text-md font-bold text-white">KATEGORİLER</span>
+        <span class="py-2 bg-black text-md font-bold text-white">BLOGLAR</span>
         </div>
         <div class="releative w-full text-black">
             @if(count($category) > 0)

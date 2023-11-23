@@ -170,9 +170,9 @@
 <script>
     var swiper1 = new Swiper(".sample-slider1", {
         direction: 'vertical',
-        effect: 'fade',
-        allowTouchMove: false,
+        allowTouchMove: true,
         cssMode: false,
+        spaceBetween: 10,
         loop: true,
         speed: 1000,
         autoplay: {
