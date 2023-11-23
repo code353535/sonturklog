@@ -172,6 +172,8 @@
         direction: 'vertical',
         effect: 'fade',
         allowTouchMove: false,
+        freeMode: true,
+      freeModeFluid: true,
         loop: true,
         speed: 1000,
         autoplay: {
