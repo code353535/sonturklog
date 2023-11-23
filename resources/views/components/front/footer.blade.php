@@ -171,13 +171,15 @@
     var swiper1 = new Swiper(".sample-slider1", {
         direction: 'vertical',
         slidesPerView: 1,
+        effect: 'slide',
+        spaceBetween: 10,
         allowTouchMove: false,
         loop: true,
         speed: 1000,
         autoplay: {
         delay: 4000,
+        reverseDirection: true,
         disableOnInteraction: false,
-        pauseOnMouseEnter: true,
       },
         navigation: {
         nextEl: ".swiper-button-next",
