@@ -28,9 +28,9 @@ class FrontController extends Controller
         $manset = Bot::with('site')
         ->where('anakategori', '2')
         ->whereNotNull('image')
-        ->orderByDesc('pubdate')
-        ->WhereNotIn('kategori', [19])
+        ->WhereNotIn('kategori', [17])
         ->WhereNotIn('kategori', [18])
+        ->orderByDesc('pubdate')
         ->take(15)
         ->get();
 
@@ -43,7 +43,7 @@ class FrontController extends Controller
 
         $yanmanset = Bot::with('site')
         ->where('anakategori', '2')
-        ->where('kategori', '19')
+        ->where('kategori', '18')
         ->whereNotNull('image')
         ->orderByDesc('pubdate')
         ->take(10)
@@ -51,7 +51,7 @@ class FrontController extends Controller
 
         $feeddd = Bot::with('site')
         ->where('anakategori', '2')
-        ->WhereNotIn('kategori', [19])
+        ->WhereNotIn('kategori', [17])
         ->WhereNotIn('kategori', [18])
         ->orderByDesc('pubdate')
         ->skip(15)
@@ -60,7 +60,7 @@ class FrontController extends Controller
 
         $feedddd = Bot::with('site')
         ->where('anakategori', '2')
-        ->where('kategori', '18')
+        ->where('kategori', '17')
         ->orderByDesc('pubdate')
         ->skip(3)
         ->take(8)
@@ -68,7 +68,7 @@ class FrontController extends Controller
 
         $feeddddd = Bot::with('site')
         ->where('anakategori', '2')
-        ->where('kategori', '19')
+        ->where('kategori', '18')
         ->orderByDesc('pubdate')
         ->skip(10)
         ->take(8)
@@ -76,7 +76,7 @@ class FrontController extends Controller
 
         $fed = Bot::with('site')
         ->where('anakategori', '2')
-        ->where('kategori', '18')
+        ->where('kategori', '17')
         ->orderByDesc('pubdate')
         ->take(3)
         ->get();
