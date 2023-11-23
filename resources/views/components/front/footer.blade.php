@@ -172,7 +172,9 @@
         direction: 'vertical',
         effect: 'fade',
         allowTouchMove: false,
-        observer: true
+        freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
         loop: true,
         speed: 1000,
         autoplay: {
