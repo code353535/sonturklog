@@ -187,7 +187,6 @@
       el: '.swiper-scrollbar',
     },
     });
-    $('#scrollbox').on('touchstart', function(event){});
   </script>
   <script>
 var swiper2 = new Swiper('.sample-slider2', {
