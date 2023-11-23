@@ -60,7 +60,6 @@
             src="{{ $fee->image }}"
             alt=""
           />
-          <div class="absolute w-full h-full bg-transparent top-0 left-0"></div>
           <div class="max-md:hidden absolute top-4 left-0 bg-white text-black px-2 py-1 font-bold text-xs oswald">SPOR</div>
           <div class="oswald absolute bottom-0 w-full bg-black/30 px-2 py-3">
             <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
