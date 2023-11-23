@@ -30,6 +30,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta name="yandex-verification" content="950121826458f0f4" />
+
+        <!-- Google tag (gtag.js) -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE6QTPCCTY"></script>
         <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
         <script type="text/javascript">
            $(document).ready(function () {
