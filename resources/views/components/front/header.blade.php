@@ -1,7 +1,7 @@
 <div x-data="{ Open: false }" class="max-md:sticky max-md:top-0 z-50 bg-white" x-cloak="false">
     <!-- header -->
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
-    <div class="flex flex-row justify-between md:py-4 text-black text-xs py-2 max-md:pl-2 border-gray-200 border-b-2">
+    <div class="flex flex-row justify-between md:py-4 text-black text-xs py-2 max-md:pl-4 border-gray-200 border-b-2">
         <!-- enüst sol -->
         <div class="text-xs flex">{{ $date = Carbon\Carbon::now()->translatedFormat('d-m-Y l') }} - Gündemi ve Blogları Takip Et.</div>
         <!-- enüst sağ -->
@@ -23,7 +23,7 @@
               </li>
         </div>
     </div>
-    <div class="flex justify-between max-lg:px-2">
+    <div class="flex justify-between max-lg:px-4">
     <div class="flex flex-row py-1 md:py-4">
         <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
