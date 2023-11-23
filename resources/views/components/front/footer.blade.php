@@ -186,7 +186,7 @@
       scrollbar: {
       el: '.swiper-scrollbar',
     },
-    });
+    }, 250);
   </script>
   <script>
 var swiper2 = new Swiper('.sample-slider2', {
