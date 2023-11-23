@@ -3,7 +3,7 @@
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
     <div class="flex flex-row justify-between md:py-4 text-black text-xs py-2 border-gray-200 border-b-2">
         <!-- enüst sol -->
-        <div class="text-xs flex max-md:pl-4">{{ $date = Carbon\Carbon::now()->translatedFormat('d-m-Y l') }} - Gündemi ve Blogları Takip Et.</div>
+        <div class="text-xs flex max-md:mx-4">{{ $date = Carbon\Carbon::now()->translatedFormat('d-m-Y l') }} - Gündemi ve Blogları Takip Et.</div>
         <!-- enüst sağ -->
         <div class="text-xs flex max-md:hidden">
               <li class="relative px-2" type="none" >
