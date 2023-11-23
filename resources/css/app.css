@@ -69,10 +69,7 @@
     }
 
  }
- .swiper-container1 {
-    width: 100%;
-    height: 100%;
-  }
+
 .sample-slider1 [class^="swiper-button-"]::after{
     content: "";
 }

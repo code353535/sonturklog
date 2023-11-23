@@ -172,7 +172,7 @@
         direction: 'vertical',
         effect: 'fade',
         allowTouchMove: false,
-        observeParents: true
+        cssMode: false,
         loop: true,
         speed: 1000,
         autoplay: {
