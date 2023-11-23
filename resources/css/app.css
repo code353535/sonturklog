@@ -82,7 +82,9 @@
     color: #ffffff;
     width: 20px;
  }
-
+ .swiper-container1{
+    touch-action: pan-y;
+  }
 
  .swiper-container1 .swiper-scrollbar-vertical{
     background: #e5e7eb;
