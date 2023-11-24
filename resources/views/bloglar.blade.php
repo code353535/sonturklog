@@ -41,7 +41,7 @@
 
                  <div class="text-md flex flex-row py-1 group/edit">
                      <div class="oswald flex items-center text-2xl pr-2 font-bold group-hover/edit:text-orange-500">{{ $loop->iteration }}</div>
-                 <div class=" text-sm font-semibold px-2 py-1 group-hover/edit:bg-black "><a href="{{ $fee->url }}" class="link">{{ $fee->baslik }}</a></div>
+                 <div class=" text-sm font-semibold px-2 py-1 group-hover/edit:bg-black "><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link">{{ $fee->baslik }}</a></div>
 
              </div>
 
