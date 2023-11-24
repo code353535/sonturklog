@@ -55,7 +55,7 @@ class FrontController extends Controller
         ->WhereNotIn('kategori', [18])
         ->orderByDesc('pubdate')
         ->skip(15)
-        ->take(8)
+        ->take(12)
         ->get();
 
         $feedddd = Bot::with('site')
@@ -63,7 +63,7 @@ class FrontController extends Controller
         ->where('kategori', '17')
         ->orderByDesc('pubdate')
         ->skip(3)
-        ->take(8)
+        ->take(12)
         ->get();
 
         $feeddddd = Bot::with('site')
@@ -71,7 +71,7 @@ class FrontController extends Controller
         ->where('kategori', '18')
         ->orderByDesc('pubdate')
         ->skip(10)
-        ->take(8)
+        ->take(12)
         ->get();
 
         $fed = Bot::with('site')
