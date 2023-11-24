@@ -38,8 +38,10 @@
     <div class="lg:mx-[170px] max-md:mx-4 flex flex-col xl:flex-row gap-4 mt-6">
         <div class="w-full gap-4">
             @if(count($kategori) > 0)
+
             @foreach($kategori->chunk(4) as $chunk)
             <div class="flex flex-row max-xl:flex-wrap gap-4">
+
             @foreach ($chunk as $i => $fee)
             @continue($i < 8)
             <div class="flex flex-col w-full mb-4 border">
@@ -61,9 +63,11 @@
             </div>
         </div>
             @endforeach
+
         </div>
             @endforeach
             {{ $kategori->links() }}
+
             @else
             <div class="flex justify-center">Kayıt bulunamadı</div>
             @endif
