@@ -7,7 +7,7 @@
     <img
     class="md:px-4 md:py-4 min-h-[350px]"
     src="{{ $detay->image }}"
-    alt=""
+    onerror="this.onerror=null;this.src='image/yoksa.png';"
   />
   <div class="absolute z-40 bg-gradient-to-t from-black via-black to-black w-full"></div>
 </div>

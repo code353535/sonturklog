@@ -12,7 +12,7 @@
              <img
              class="max-h-[390px] min-h-[390px] object-center"
              src="{{ $fee->image }}"
-             alt=""
+             onerror="this.onerror=null;this.src='image/yoksa.png';"
            />
 
            <div class="oswald absolute bottom-0 max-md:w-full w-[450px] bg-white max-md:bg-white/80 px-2 py-3">
@@ -60,7 +60,7 @@
                 <img
                 class="max-h-[240px] min-h-[240px] w-full object-cover"
                 src="{{ $fee->image }}"
-                alt=""
+                onerror="this.onerror=null;this.src='image/yoksa.png';"
               />
               <div class="oswald absolute bottom-0 w-full bg-black/30 py-2">
                 <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
@@ -92,7 +92,7 @@
         @foreach ($chunk as $fee)
         <div class="flex flex-col w-full mb-4 border">
         <div class="flex flex-col mb-2 overflow-hidden xl:max-h-[170px] max-h-[270px]">
-            <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ $fee->image }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" /></a>
+            <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ $fee->image }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" onerror="this.onerror=null;this.src='image/yoksa.png';"/></a>
         </div>
         <div class="flex justify-between">
             <div class="text-xs flex items-center px-2"><img src="{{ URL::asset('storage/logo/' .$fee->site?->logo) }}" class="h-6 w-6 mr-2" /> <a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline">{{ $fee->site?->ad }}</a>
