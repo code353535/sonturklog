@@ -119,8 +119,6 @@ class Botara extends Command
 
                                 $src = $matches[1];
 
-
-
                             DB::table('bot')->insertOrIgnore([
                                 'site_id' => $site_id,
                                 'user_id' => $user_id,
@@ -155,6 +153,7 @@ class Botara extends Command
                             'created_at' => Carbon::now(),
                             'updated_at' => Carbon::now()
                         ]);
+
                     }elseif($article->image){
                         $src = $article->image;
                         DB::table('bot')->insertOrIgnore([
@@ -172,6 +171,7 @@ class Botara extends Command
                             'created_at' => Carbon::now(),
                             'updated_at' => Carbon::now()
                         ]);
+
                     }elseif($article->imageUrl){
                         $src = $article->imageUrl;
                         DB::table('bot')->insertOrIgnore([

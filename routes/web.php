@@ -85,6 +85,12 @@ Route::group(['middleware' => ['App\Http\Middleware\Admin']], function () {
     Route::get('/admin/kategori/{category}/edit', [AdmincategoryController::class, 'edit'])->name('admin.categoryedit');
     Route::put('/admin/kategori/{category}/update', [AdmincategoryController::class, 'update'])->name('admin.categoryupdate');
     Route::delete('/admin/kategori/{category}/destroy', [AdmincategoryController::class, 'destroy'])->name('admin.categorydestroy');
+    Route::get('/admin/anakategori/list', [AdmincategoryController::class, 'anacategorylist'])->name('admin.anacategorylist');
+    Route::get('/admin/anakategori/ekle', [AdmincategoryController::class, 'anacategoryadd'])->name('admin.anacategoryadd');
+    Route::post('/admin/anakategori/ekle', [AdmincategoryController::class, 'anacreate'])->name('admin.anacategorycreate');
+    Route::delete('/admin/anakategori/{anacategory}/destroy', [AdmincategoryController::class, 'anadestroy'])->name('admin.anacategorydestroy');
+    Route::get('/admin/anakategori/{anacategory}/edit', [AdmincategoryController::class, 'anaedit'])->name('admin.anacategoryedit');
+    Route::put('/admin/anakategori/{anacategory}/update', [AdmincategoryController::class, 'anaupdate'])->name('admin.anacategoryupdate');
 
     Route::get('/admin/siteler/sitelist', [AdminsiteController::class, 'index'])->name('admin.sitelist');
     Route::get('/admin/siteler/onaybekleyen', [AdminsiteController::class, 'onaybekleyen'])->name('admin.onaybekleyen');
