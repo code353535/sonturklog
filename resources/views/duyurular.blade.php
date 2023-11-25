@@ -12,7 +12,7 @@
 
             <div class="flex flex-col w-full mb-4 border">
 
-            <div class="flex justify-between pt-2">
+            <div class="flex justify-between py-2">
                 <div class="text-xs flex items-center px-2"><img src="{{ URL::asset('storage/logo/' .$fee->site?->logo) }}" class="h-6 w-6 mr-2" /> <a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline">{{ $fee->site?->ad }}</a>
                 </div>
                 <div class="flex text-xs items-center">
