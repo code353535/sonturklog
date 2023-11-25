@@ -28,6 +28,7 @@
                                             <th class="p-4 pr-8 border border-y-2 border-gray-50 dark:border-zinc-600 border-l-0">Onay Durumu</th>
                                             <th class="p-4 pr-8 border rtl:border-l border-y-2 border-gray-50 dark:border-zinc-600 border-l-0">Yayın Durumu</th>
                                             <th class="p-4 pr-8 border rtl:border-l border-y-2 border-gray-50 dark:border-zinc-600 border-l-0">Sahiplik Doğrulaması</th>
+                                            <th class="p-4 pr-8 border rtl:border-l border-y-2 border-gray-50 dark:border-zinc-600 border-l-0">Tarih</th>
                                             <th class="p-4 pr-8 border rtl:border-l border-y-2 border-gray-50 dark:border-zinc-600 border-l-0">Düzenle</th>
                                         </tr>
                                     </thead>
@@ -43,6 +44,7 @@
                                             <td class="p-4 pr-8 border border-t-0 border-l-0 border-gray-50 dark:border-zinc-600"> {{ $site->durum }}</td>
                                             <td class="p-4 pr-8 border border-t-0 border-l-0 border-gray-50 dark:border-zinc-600"> {{ $site->yayin }}</td>
                                             <td class="p-4 pr-8 border border-t-0 border-l-0 border-gray-50 dark:border-zinc-600"> {{ $site->sahip}}</td>
+                                            <td class="p-4 pr-8 border border-t-0 border-l-0 border-gray-50 dark:border-zinc-600"> {{ $site->created_at}}</td>
                                             </td>
                                             <td class="flex p-4 pr-8 border border-t-0 border-l-0 border-gray-50 dark:border-zinc-600">
                                                 <a href="{{ route('admin.siteupdate',['site' => $site]) }}" type="button" class="btn mr-2 text-white bg-yellow-500 border-yellow-500 hover:bg-yellow-600 hover:border-yellow-600 focus:bg-yellow-600 focus:border-yellow-600 focus:ring focus:ring-yellow-500/30 active:bg-yellow-600 active:border-yellow-600"><i class="fa-regular fa-pen-to-square"></i></a>
