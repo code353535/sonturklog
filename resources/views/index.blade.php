@@ -9,7 +9,7 @@
         <div class="swiper-slide">
           <img
             class="max-h-[350px] min-h-[350px]"
-            src="{{ $fee->image }}"
+            src="{{ $fee->image }}" onerror="this.onerror=null;this.src='/assets/image/yoksa.png';"
             alt=""
           />
           <div class="max-md:hidden absolute top-4 left-0 bg-white text-black px-2 py-1 font-bold text-xs oswald"><i class="fa-regular fa-clock mr-2"></i>GÜNDEM</div>
