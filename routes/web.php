@@ -39,6 +39,7 @@ Route::post('/linksay',  [FrontController::class, 'linksay'])->name('front.links
 Route::get('/detaylar/{id}/{slug}',  [FrontController::class, 'detay'])->name('front.detaylar');
 Route::get('/bloglar',  [FrontController::class, 'bloglar'])->name('front.bloglar');
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+Route::get('/duyurular',  [FrontController::class, 'duyurular'])->name('front.duyurular');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
