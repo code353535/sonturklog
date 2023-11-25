@@ -57,8 +57,8 @@
 
             <img
             class="max-h-[390px] min-h-[390px] object-center"
-            src="{{ $fee->image }}"
-            onerror="this.onerror=null;this.src='image/yoksa.png';"
+            src="{{ $fee->image }}" onerror="this.onerror=null;this.src='image/yoksa.png';"
+            alt=""
           />
           <div class="max-md:hidden absolute top-4 left-0 bg-white text-black px-2 py-1 font-bold text-xs oswald">SPOR</div>
           <div class="oswald absolute bottom-0 w-full bg-black/30 px-2 py-3">
@@ -88,8 +88,8 @@
 
             <img
             class="max-h-[240px] min-h-[240px] w-full object-cover"
-            src="{{ $fee->image }}"
-            onerror="this.onerror=null;this.src='image/yoksa.png';"
+            src="{{ $fee->image }}" onerror="this.onerror=null;this.src='image/yoksa.png';"
+            alt=""
           />
           <div class="oswald absolute bottom-0 w-full bg-black/30 py-2">
             <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
