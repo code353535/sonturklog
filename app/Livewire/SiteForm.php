@@ -38,7 +38,9 @@ class SiteForm extends Component
 
         $kayitsay = Site::where('user_id', $userid)->count();
 
-        $anacategory = Anacategory::orderBy('ad')->get();
+        $anacategory = Anacategory::orderBy('ad')
+        ->WhereNotIn('id', [3])
+        ->get();
         return view('livewire.site-form', ['anacategory' => $anacategory , 'kayitsay' => $kayitsay]);
     }
     public function decreaseStep(){
