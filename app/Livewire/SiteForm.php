@@ -62,7 +62,7 @@ class SiteForm extends Component
     public function validateData(){
         if($this->currentStep == 1){
             $this->validate([
-                'ad'=>'required|max:30',
+                'ad'=>'required|max:50',
                 'url'=>['required','url','unique:site', new Siteurl],
                 'anakategori'=>'required',
 
