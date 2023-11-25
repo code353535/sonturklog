@@ -46,7 +46,7 @@
             @continue($i < 8)
             <div class="flex flex-col w-full mb-4 border">
             <div class="flex flex-col mb-2 overflow-hidden xl:max-h-[170px] max-h-[270px]">
-                <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ $fee->image }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" onerror="this.onerror=null;this.src='image/yoksa.png';"/></a>
+                <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ $fee->image }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" onerror="this.onerror=null;this.src='image/yoksa.png';" alt=""/></a>
             </div>
             <div class="flex justify-between">
                 <div class="text-xs flex items-center px-2"><img src="{{ URL::asset('storage/logo/' .$fee->site?->logo) }}" class="h-6 w-6 mr-2" /> <a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline">{{ $fee->site?->ad }}</a>
