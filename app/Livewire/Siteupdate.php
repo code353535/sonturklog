@@ -31,7 +31,7 @@ class Siteupdate extends Component
 
             $this->validate([
 
-                'ad'=>'required|max:30',
+                'ad'=>'required|max:100',
                 'anakategori'=>'required',
                 'aciklama'=>'required|min:50|max:280',
 
