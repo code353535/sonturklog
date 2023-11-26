@@ -46,8 +46,7 @@ class Botara extends Command
 
                     try {
 
-                        $response = Http::timeout(5)->retry(2, 100)
-                        ->get($item->katlink);
+                        $response = Http::timeout(5)->get($item->katlink);
 
                         if ($response->clientError()) {
                             $r = Http::post($item->katlink);
