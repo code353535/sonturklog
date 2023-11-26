@@ -4,7 +4,7 @@
 </div>
 
 @if(count($kategorid) > 0)
-<div class="lg:mx-[170px] max-md:mx-4 max-md:mt-4 max-md:mb-4 md:py-6 md:px-6 md:bg-black">
+<div class="lg:mx-[170px] max-md:mx-4 max-md:mt-4 max-md:mb-4 md:py-6 md:px-6 pb-6 bg-black">
 <div class="swiper-container2">
                 <div class="swiper sample-slider2">
                     <div class="swiper-wrapper">
