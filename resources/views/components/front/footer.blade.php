@@ -143,7 +143,7 @@
     <script>
       var swiper = new Swiper(".sample-slider", {
     spaceBetween: 30,
-      speed: 1500,
+      speed: 1000,
       loop: true,
       autoplay: {
         delay: 5000,
@@ -196,7 +196,7 @@ var swiper2 = new Swiper('.sample-slider2', {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 30,
-        speed: 2000,
+        speed: 1000,
         autoplay: {
         delay: 1500,
         disableOnInteraction: false,
@@ -225,7 +225,7 @@ pagination: {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 10,
-            speed: 1500,
+            speed: 1000,
             autoplay: {
             delay: 3500,
             disableOnInteraction: false,
