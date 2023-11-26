@@ -17,7 +17,7 @@
     </div>
 
 </div>
-    <div class="flex bg-black md:bg-white md:border-t-2 md:border-b-2 border-gray-200 py-2 text-sm font-medium text-white md:text-black items-center justify-between items-center max-h-[50px]">
+    <div class="flex bg-black md:bg-white md:border-b-2 border-gray-200 py-2 text-sm font-medium text-white md:text-black items-center justify-between items-center max-h-[50px]">
         <div class="oswald flex flex-row items-center text-md max-md:hidden py-2 uppercase gap-2">
        <div><a href="/" class="{{ request()->routeIs('front.index') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">HABERLER</a></div>
        <div> <a href="{{ route('front.bloglar') }}" class="{{ request()->routeIs('front.bloglar') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">Bloglar</a></div>
