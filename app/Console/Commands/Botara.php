@@ -9,7 +9,7 @@ use Illuminate\Http\Client\Pool;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use App\Models\Feed;
-use Exception;
+use GuzzleHttp\Exception\RequestException;
 
 class Botara extends Command
 {
@@ -70,7 +70,7 @@ class Botara extends Command
                             }
                         }
 
-                    } catch(Exception $e) {
+                    } catch(RequestException $e) {
                         $hatasil = [$e ,$item->katlink];
                     $sil = $hatasil[1];
                         if($hatasil){
