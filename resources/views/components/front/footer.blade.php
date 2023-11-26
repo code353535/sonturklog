@@ -126,11 +126,11 @@
 
       <div class="oswald mt-12 py-2 bg-black px-4 items-center">
         <div class="text-center sm:flex sm:justify-between sm:text-left">
-          <p class="text-xs text-gray-300">
+          <p class="text-xs text-white">
             <span class="block sm:inline">TÜM HAKKI SAKLIDIR</span>
           </p>
 
-          <p class="mt-4 text-xs text-gray-300 sm:order-first sm:mt-0">
+          <p class="mt-4 text-xs text-white sm:order-first sm:mt-0">
             &copy; 2023 TURKLOG.NET
           </p>
         </div>
