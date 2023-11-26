@@ -298,5 +298,6 @@ pagination: {
 });
 
     </script>
+
 </body>
 </html>

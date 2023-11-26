@@ -3,7 +3,8 @@
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
 
     <div class="flex justify-center max-lg:mx-auto lg:bg-black">
-    <div class="flex flex-row py-2  lg:text-white">
+
+    <div class="flex flex-row py-2 lg:text-white">
         <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
             <span style="--i:2" class="font-black">U</span>
@@ -31,7 +32,9 @@
             <i class="fa-solid fa-xmark fa-xl text-white hover:text-orange-500 hover:rotate-90 transition ease-out duration-500"></i>
             </button>
     </div>
+
     <div class="flex px-4 lg:px-6 items-center text-md">
+        <div class="px-2 text-sm font-medium text-black oswald uppercase max-md:hidden"> {{ $date = Carbon\Carbon::now()->translatedFormat('d-m-Y l') }}</div>
        <div class="px-2"> <x-front.bildirim/></div>
        <div class=""> @guest
         <x-front.guestusermenu/>
