@@ -2,8 +2,8 @@
     <!-- header -->
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
 
-    <div class="flex justify-center max-lg:mx-auto md:bg-black">
-    <div class="flex flex-row py-2  md:text-white">
+    <div class="flex justify-center max-lg:mx-auto lg:bg-black">
+    <div class="flex flex-row py-2  lg:text-white">
         <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
             <span style="--i:2" class="font-black">U</span>
