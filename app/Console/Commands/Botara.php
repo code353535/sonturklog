@@ -46,7 +46,7 @@ class Botara extends Command
 
                     try {
 
-                        $response = Http::timeout(5)
+                        $response = Http::timeout(-1)
                         ->get($item->katlink);
 
                         if ($response->clientError()) {
