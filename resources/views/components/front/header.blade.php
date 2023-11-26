@@ -1,30 +1,9 @@
 <div x-data="{ Open: false }" class="max-md:sticky max-md:top-0 z-50 bg-white" x-cloak="false">
     <!-- header -->
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
-    <div class="flex flex-row justify-between md:py-4 text-black text-xs py-2 border-gray-200 border-b-2 max-md:hidden">
-        <!-- enüst sol -->
-        <div class="text-xs flex max-md:mx-4">{{ $date = Carbon\Carbon::now()->translatedFormat('d-m-Y l') }} - Gündemi ve Blogları Takip Et.</div>
-        <!-- enüst sağ -->
-        <div class="text-xs flex">
-              <li class="relative px-2" type="none" >
-                <a class="hover:text-orange-500 focus:orange-500" href="{{ route('sartlar') }}">
-                    <i class="fa-solid fa-file-signature mr-1"></i>  Kulanım Şartları
-                </a>
-              </li>
-              <li class="relative px-2" type="none" >
-                <a class="hover:text-orange-500 focus:orange-500" href="{{ route('gizlilik') }}">
-                    <i class="fa-solid fa-file-shield mr-1"></i> Gizlilik Politikası
-                </a>
-              </li>
-              <li class="relative px-2" type="none" >
-                <a class="hover:text-orange-500 focus:orange-500" href="{{ route('sss') }}">
-                    <i class="fa-solid fa-circle-info mr-1"></i> Sık Sorulan Sorular
-                </a>
-              </li>
-        </div>
-    </div>
-    <div class="flex justify-between max-lg:mx-auto">
-    <div class="flex flex-row py-2 md:py-4">
+
+    <div class="flex justify-center max-lg:mx-auto md:bg-black">
+    <div class="flex flex-row py-2  md:text-white">
         <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
             <span style="--i:1" class="font-black">T</span>
             <span style="--i:2" class="font-black">U</span>
@@ -36,16 +15,7 @@
      </div>
      <span class="font-bold text-xl max-md:hidden -rotate-90 px-2">.NET</span>
     </div>
-    <div class="flex flex-row items-center max-md:hidden">
-        <div class="flex flex-row items-center px-2">
 
-            <input type="email" name="email" id="email" class="w-96 p-2 border-gray-300 focus:border-orange-500 focus:ring-orange-500" placeholder="Ne aramıştın ..." required />
-        </div>
-        <div class="flex flex-row items-center px-2">
-            <button type="submit" class="oswald w-full text-black focus:ring-0 focus:outline-none font-medium text-md px-4 py-2 text-center bg-gray-100 hover:bg-black hover:text-orange-500">
-                Ara</button>
-        </div>
-    </div>
 </div>
     <div class="flex bg-black md:bg-white md:border-t-2 md:border-b-2 border-gray-200 py-2 text-sm font-medium text-white md:text-black items-center justify-between items-center max-h-[50px]">
         <div class="oswald flex flex-row items-center text-md max-md:hidden py-2 uppercase gap-2">
