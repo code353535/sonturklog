@@ -4,17 +4,17 @@
 
     <div class="flex justify-center max-lg:mx-auto lg:bg-black">
 
-    <div class="flex flex-row py-2 lg:text-white">
-        <div class="flex items-center waviy text-7xl max-md:text-5xl tracking-widest oswald">
-            <span style="--i:1" class="font-black">T</span>
-            <span style="--i:2" class="font-black ">U</span>
-            <span style="--i:3" class="font-black">R</span>
-            <span style="--i:4" class="font-black">K</span>
-            <span style="--i:5" class="font-black">L</span>
-            <span style="--i:6" class="font-black">O</span>
-            <span style="--i:7" class="font-black">G</span>
+    <div class="flex flex-row py-3 lg:text-white">
+        <div class="flex items-center waviy text-6xl max-md:text-5xl tracking-[.09em] alfa">
+            <span style="--i:1" class="font-medium">T</span>
+            <span style="--i:2" class="font-medium">U</span>
+            <span style="--i:3" class="font-medium">R</span>
+            <span style="--i:4" class="font-medium">K</span>
+            <span style="--i:5" class="font-medium">L</span>
+            <span style="--i:6" class="font-medium">O</span>
+            <span style="--i:7" class="font-medium">G</span>
      </div>
-     <span class="font-bold text-xl max-md:hidden -rotate-90 px-2">.NET</span>
+     <span class="font-light text-xl max-md:hidden -rotate-90 px-2">.NET</span>
     </div>
 
 </div>
