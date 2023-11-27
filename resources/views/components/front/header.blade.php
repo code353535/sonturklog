@@ -10,9 +10,9 @@
             <span style="--i:2" class="font-black ">U</span>
             <span style="--i:3" class="font-black">R</span>
             <span style="--i:4" class="font-black">K</span>
-            <span style="--i:5" class="font-black lg:text-orange-500">L</span>
-            <span style="--i:6" class="font-black lg:text-orange-500">O</span>
-            <span style="--i:7" class="font-black lg:text-orange-500">G</span>
+            <span style="--i:5" class="font-black">L</span>
+            <span style="--i:6" class="font-black">O</span>
+            <span style="--i:7" class="font-black">G</span>
      </div>
      <span class="font-bold text-xl max-md:hidden -rotate-90 px-2">.NET</span>
     </div>
@@ -23,7 +23,7 @@
        <div><a href="/" class="{{ request()->routeIs('front.index') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">HABERLER</a></div>
        <div> <a href="{{ route('front.bloglar') }}" class="{{ request()->routeIs('front.bloglar') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">Bloglar</a></div>
        <div><x-front.kategoricanvas/></div>
-       <div> <a href="{{ route('front.duyurular') }}" class="py-2 hover:text-white hover:bg-black px-2">Resmi Kurum Duyuruları</a></div>
+       <div><a href="{{ route('front.duyurular') }}" class="py-2 hover:text-white hover:bg-black px-2">Resmi Kurum Duyuruları</a></div>
     </div>
 
     <div class="md:hidden px-4 min-h-[50px] flex items-center text-md">
