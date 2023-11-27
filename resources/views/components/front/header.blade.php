@@ -4,7 +4,7 @@
 
     <div class="flex justify-center max-lg:mx-auto lg:bg-black">
 
-    <div class="flex flex-row py-3 lg:text-white">
+    <div class="flex flex-row py-4 lg:text-white">
         <div class="flex items-center waviy text-6xl max-md:text-5xl tracking-[.09em] alfa">
             <span style="--i:1" class="font-medium">T</span>
             <span style="--i:2" class="font-medium">U</span>
