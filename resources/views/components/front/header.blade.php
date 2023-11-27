@@ -10,9 +10,9 @@
             <span style="--i:2" class="font-black ">U</span>
             <span style="--i:3" class="font-black">R</span>
             <span style="--i:4" class="font-black">K</span>
-            <span style="--i:5" class="font-black text-orange-500">L</span>
-            <span style="--i:6" class="font-black text-orange-500">O</span>
-            <span style="--i:7" class="font-black text-orange-500">G</span>
+            <span style="--i:5" class="font-black lg:text-orange-500">L</span>
+            <span style="--i:6" class="font-black lg:text-orange-500">O</span>
+            <span style="--i:7" class="font-black lg:text-orange-500">G</span>
      </div>
      <span class="font-bold text-xl max-md:hidden -rotate-90 px-2">.NET</span>
     </div>
