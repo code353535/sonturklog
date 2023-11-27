@@ -140,7 +140,7 @@ class FrontController extends Controller
         ->whereNotNull('image')
         ->orderByDesc('pubdate')
         ->skip(8)
-        ->take(20)
+        ->take(28)
         ->get();
 
         $yanmansetblog = Bot::with('site')
