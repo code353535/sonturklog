@@ -109,7 +109,7 @@ class FrontController extends Controller
 
         $cat = $request->cat;
         $bul = Category::where('slug', $cat)->first();
-        $buldum = $bul->id;
+        $buldum = $bul?->id;
         $kategori =Bot::with('site')->where('kategori', $buldum)
         ->where('anakategori', $bul->anacategory_id)
         ->wherenotNull('image')

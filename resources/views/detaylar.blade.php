@@ -6,8 +6,7 @@
     <div class="flex justify-center items-center releative w-full min-h-[350px]">
     <img
     class="md:px-4 md:py-4 min-h-[350px]"
-    src="{{ $detay->image }}" onerror="this.onerror=null;this.src='image/yoksa.png';"
-    alt=""
+    src="{{ $detay->image }}"
   />
   <div class="absolute z-40 bg-gradient-to-t from-black via-black to-black w-full"></div>
 </div>
