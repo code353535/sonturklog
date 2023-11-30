@@ -160,12 +160,5 @@ class FrontController extends Controller
 
         return view('bloglar',['okunanblog' => $okunanblog, 'bloglar' => $bloglar, 'yanmansetblog' => $yanmansetblog, 'blogpop' => $blogpop]);
      }
-     public function duyurular(Request $request){
 
-        $duyuru = Bot::with('site')
-        ->where('anakategori', '3')
-        ->orderByDesc('pubdate')
-        ->paginate(20);
-        return view('duyurular',['duyuru' => $duyuru]);
-     }
 }
