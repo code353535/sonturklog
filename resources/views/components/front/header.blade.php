@@ -5,7 +5,7 @@
     <div class="flex justify-center max-lg:mx-auto lg:bg-black">
 
     <div class="flex flex-row py-4 lg:text-white">
-        <div class="flex items-center waviy text-6xl max-md:text-5xl tracking-[.09em] alfa">
+        <div class="flex items-center waviy text-5xl max-md:text-5xl tracking-[.09em] alfa">
             <span style="--i:1" class="font-medium">T</span>
             <span style="--i:2" class="font-medium">U</span>
             <span style="--i:3" class="font-medium">R</span>
@@ -14,7 +14,7 @@
             <span style="--i:6" class="font-medium">O</span>
             <span style="--i:7" class="font-medium">G</span>
      </div>
-     <span class="font-light text-xl max-md:hidden -rotate-90 px-2">.NET</span>
+     <span class="font-light text-md max-md:hidden -rotate-90 px-1">.NET</span>
     </div>
 
 </div>

@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Carbon\Carbon;
 use App\Models\Category;
 use App\Models\Anacategory;
-use Illuminate\Support\Facades\View;
+
 
 class AppServiceProvider extends ServiceProvider
 {
