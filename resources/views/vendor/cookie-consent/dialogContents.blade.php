@@ -1,4 +1,4 @@
-<div class="js-cookie-consent cookie-consent fixed bottom-0 inset-x-0 pb-2">
+<div class="js-cookie-consent cookie-consent fixed bottom-0 inset-x-0 pb-2 max-md:hidden">
     <div class="max-w-7xl mx-auto px-6">
         <div class="p-2 bg-black">
             <div class="flex items-center justify-between flex-wrap">
