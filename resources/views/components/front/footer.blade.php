@@ -1,4 +1,4 @@
-
+@include('cookie-consent::index')
 <footer class="bg-white border-t-2 border-gray-200 border-solid roboto mt-16 lg:mx-[170px]">
     <div class="mx-auto max-w-screen-xl pt-8 lg:pt-10">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
