@@ -96,7 +96,7 @@ class Botara extends Command
 
                     $feed = simplexml_load_string($response->body());
 
-
+                        if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title && $article->link){
 
@@ -266,7 +266,7 @@ class Botara extends Command
                     }
                     }
                 }
-
+            }
         }
 }
 }
