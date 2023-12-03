@@ -57,7 +57,7 @@ class Botara extends Command
                             if($r->failed()) {
                                 Feed::where('katlink', $item->katlink)
                                     ->delete();
-                            Log::info('URL client hatasi sonucu silindi', [
+                            Log::error('URL client hatasi sonucu silindi', [
                                     'url' => $item->katlink,
                                     ]);
                                     continue;
@@ -71,7 +71,7 @@ class Botara extends Command
                             if($re->failed()) {
                                 Feed::where('katlink', $item->katlink)
                                     ->delete();
-                                    Log::info('URL server hatasi sonucu silindi', [
+                                    Log::error('URL server hatasi sonucu silindi', [
                                         'url' => $item->katlink,
                                         ]);
                                     continue;
@@ -83,7 +83,7 @@ class Botara extends Command
                     $sil = $hatasil[1];
                         if($hatasil){
                             $deleted = Feed::where('katlink', $sil)->delete();
-                            Log::info('URL exception hatasi sonucu silindi', [
+                            Log::error('URL exception hatasi sonucu silindi', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;
@@ -111,7 +111,7 @@ class Botara extends Command
                         $hat = [$e ,$item->katlink];
                     $sill = $hat[1];
                         if($hat){
-                            Log::info('URL RequestException hatasi veriyor', [
+                            Log::error('URL RequestException hatasi veriyor', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;
