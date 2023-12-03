@@ -109,8 +109,6 @@ class Botara extends Command
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
-                                if($article->title && $article->link){
-
 
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
@@ -275,7 +273,7 @@ class Botara extends Command
                     }
 
                     }
-                    }
+
                 }
             }
         }
