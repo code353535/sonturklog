@@ -1,5 +1,5 @@
 @auth
-<div x-data="{dropdownMenu: false}" class="relative roboto mt-1" x-cloak="false">
+<div x-data="{dropdownMenu: false}" class="relative roboto mt-1 max-md:hidden" x-cloak="false">
     <!-- Dropdown toggle button -->
 
     <button @click="dropdownMenu = ! dropdownMenu" class="flex items-center p-2 px-2 py-4">
