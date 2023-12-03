@@ -2,11 +2,11 @@
     <button @click="dropdownMenu = ! dropdownMenu" class="hover:text-orange-500 flex items-center ml-1">
         @if(Auth::user()->photo)
         <div class="relative">
-      <img src=" {{ asset('photo/'.Auth::user()->photo) }}" class="w-8 h-8 rounded border-2 border-orange-500" alt="Avatar" />
+      <img src=" {{ asset('photo/'.Auth::user()->photo) }}" class="md:w-8 md:h-8 w-6 h-6 rounded border-2 border-orange-500" alt="Avatar" />
     </div>
       @else
-      <div class="w-8 h-8 relative flex items-center rounded bg-gray-400 text-lg text-white">
-        <i class="fa fa-user px-2"></i>
+      <div class="md:w-8 md:h-8 w-6 h-6 relative flex items-center rounded bg-gray-400 text-lg text-white">
+        <i class="fa fa-user px-1 md:px-2"></i>
       </div>
 
      @endif
