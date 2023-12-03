@@ -9,7 +9,6 @@ use Illuminate\Http\Client\Pool;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use App\Models\Feed;
-use Exception;
 use Illuminate\Support\Facades\Log;
 use GuzzleHttp\Exception\RequestException;
 
@@ -81,7 +80,9 @@ class Botara extends Command
                     } catch(RequestException $e) {
                         $hatalink = [$e ,$item->katlink];
                         if($hatalink){
-                            Log::error('URL RequestException hatasi.', [
+                            Feed::where('katlink', $hatalink)
+                            ->delete();
+                            Log::error('URL RequestException hatasi. Url silindi.', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;

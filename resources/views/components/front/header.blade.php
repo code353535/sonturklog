@@ -23,7 +23,7 @@
        <div><x-front.kategoricanvas/></div>
 
     </div>
-    <div class="flex items-center waviy text-3xl tracking-[.09em] alfa md:hidden px-4">
+    <div class="flex items-center waviy text-2xl tracking-[.09em] alfa md:hidden px-4">
         <span style="--i:1" class="font-medium">T</span>
         <span style="--i:2" class="font-medium">U</span>
         <span style="--i:3" class="font-medium">R</span>
