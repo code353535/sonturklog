@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
-use GuzzleHttp\Exception\RequestException;
+use Exception;
 
 class Botara extends Command
 {
@@ -76,18 +76,18 @@ class Botara extends Command
                                     continue;
                             }
                         }
-
-                    } catch(RequestException $e) {
-                        $hatalink = [$e ,$item->katlink];
-                        if($hatalink){
-                            Feed::where('katlink', $hatalink)
-                            ->delete();
+                    } catch(Exception $e) {
+                        $hatasil = [$e ,$item->katlink];
+                    $sil = $hatasil[1];
+                        if($hatasil){
+                            $deleted = Feed::where('katlink', $sil)->delete();
                             Log::error('URL RequestException hatasi. Url silindi.', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;
                             }
                 }
+
                     $requests[] = $pool->as($alias)
                         ->get($item->katlink);
 
