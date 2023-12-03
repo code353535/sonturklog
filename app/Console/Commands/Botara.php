@@ -106,7 +106,7 @@ class Botara extends Command
                 $anakategori = explode('|', $alias)[5];
 
 
-                    $feed = simplexml_load_string($response->getBody());
+                    $feed = simplexml_load_string($response->getBody()->getContents());
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
