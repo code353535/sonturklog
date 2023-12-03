@@ -7,6 +7,7 @@ use App\Models\Bot;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use App\Models\Category;
+use App\Models\Site;
 
 class FrontController extends Controller
 {
@@ -164,6 +165,15 @@ class FrontController extends Controller
         ->get();
 
         return view('bloglar',['okunanblog' => $okunanblog, 'bloglar' => $bloglar, 'yanmansetblog' => $yanmansetblog, 'blogpop' => $blogpop]);
+     }
+
+     public function habersite(){
+
+        $habersite = Site::where('anakategori', '2')
+        ->orderBy('ad')
+        ->get();
+
+        return view('habersite',['habersite' => $habersite]);
      }
 
 }
