@@ -105,18 +105,9 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-               try {
-                    $feed = simplexml_load_string($response->body());
-                    } catch(RequestException $e) {
-                        $hat = [$e ,$item->katlink];
-                    $sill = $hat[1];
-                        if($hat){
-                            Log::error('URL RequestException hatasi veriyor', [
-                                'url' => $item->katlink,
-                                ]);
-                            continue;
-                            }
-                }
+
+                    $feed = simplexml_load_string($response->getBody());
+
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title && $article->link){
