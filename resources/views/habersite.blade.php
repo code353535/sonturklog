@@ -15,7 +15,7 @@
 
             <div class="flex flex-col w-full mb-4 border bg-gray-100 shadow-md shadow-slate-500/50 md:px-4 md:py-4 px-10 py-10">
             <div class="flex flex-col mb-2 overflow-hidden xl:max-h-[150px] max-h-[150px]">
-                <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ URL::asset('storage/logo/' .$fee->logo) }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" alt=""/></a>
+                <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ URL::asset('storage/logo/' .$fee->logo) }}" class="xl:h-[150px] h-[150px] min-w-full hover:scale-110 transition duration-500 object-cover" alt=""/></a>
             </div>
 
             <div class="oswald flex grow px-1 text-lg font-bold pb-3 px-2"><a href="{{ $fee->url }}" class="hover:underline" target="_blank">{{ $fee->ad }}</a></div>
