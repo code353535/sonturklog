@@ -105,18 +105,8 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                try {
-                    $feed = simplexml_load_string($response->getBody());
-                } catch (RequestException $e) {
-                    if ($e->hasResponse()) {
-                        $response = $e->getResponse();
-                        $body = $response->getBody();
-                        Log::error('body hatası', [
-                            'body' => $body,
-                            ]);
-                        continue;
-                    }
-                }
+                    $feed = simplexml_load_string($response->getBody(),'SimpleXMLElement',LIBXML_NOCDATA);
+
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
