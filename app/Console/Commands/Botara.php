@@ -111,8 +111,7 @@ class Botara extends Command
                         $hat = [$e ,$item->katlink];
                     $sill = $hat[1];
                         if($hat){
-                            $deleted = Feed::where('katlink', $sill)->delete();
-                            Log::info('URL RequestException hatasi sonucu silindi', [
+                            Log::info('URL RequestException hatasi veriyor', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;
