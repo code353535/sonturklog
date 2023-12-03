@@ -99,9 +99,14 @@ class FrontController extends Controller
         $id = $request->id;
 
          $detay = Bot::where('id' ,$id)->first();
+         $kat = $detay->kategori;
+         $kategori =Bot::with('site')->where('kategori', $kat)
+         ->wherenotNull('image')
+        ->orderByDesc('pubdate')
+        ->take(12)
+        ->get();
 
-
-         return view('detaylar',['detay' => $detay]);
+         return view('detaylar',['detay' => $detay , 'kategori' => $kategori]);
 
      }
 
