@@ -8,7 +8,7 @@
         <div class="w-full gap-4">
             @if(count($habersite) > 0)
 
-            @foreach($habersite->chunk(4) as $chunk)
+            @foreach($habersite->chunk(5) as $chunk)
             <div class="flex flex-row max-xl:flex-wrap gap-4">
 
             @foreach ($chunk as $fee)
