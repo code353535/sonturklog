@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Exception;
+use Illuminate\Support\Facades\Log;
 
 class Botara extends Command
 {
@@ -46,7 +47,7 @@ class Botara extends Command
 
                     try {
 
-                        $response = Http::timeout(5)
+                        $response = Http::timeout(60)
                         ->get($item->katlink);
 
                         if ($response->clientError()) {
@@ -55,6 +56,9 @@ class Botara extends Command
                             if($r->failed()) {
                                 Feed::where('katlink', $item->katlink)
                                     ->delete();
+                            Log::info('URL client hatasi sonucu silindi', [
+                                    'url' => $item->katlink,
+                                    ]);
                                     continue;
                             }
                         }
@@ -66,6 +70,9 @@ class Botara extends Command
                             if($re->failed()) {
                                 Feed::where('katlink', $item->katlink)
                                     ->delete();
+                                    Log::info('URL server hatasi sonucu silindi', [
+                                        'url' => $item->katlink,
+                                        ]);
                                     continue;
                             }
                         }
@@ -75,6 +82,9 @@ class Botara extends Command
                     $sil = $hatasil[1];
                         if($hatasil){
                             $deleted = Feed::where('katlink', $sil)->delete();
+                            Log::info('URL exception hatasi sonucu silindi', [
+                                'url' => $item->katlink,
+                                ]);
                             continue;
                             }
                 }
