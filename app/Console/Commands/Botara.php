@@ -11,7 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Exception;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Http\Client\RequestException;
+use GuzzleHttp\Exception\RequestException;
 
 class Botara extends Command
 {
@@ -105,8 +105,18 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-
-                    $feed = simplexml_load_string($response->body());
+                try {
+                    $feed = simplexml_load_string($response->getBody());
+                } catch (RequestException $e) {
+                    if ($e->hasResponse()) {
+                        $response = $e->getResponse();
+                        $body = $response->getBody();
+                        Log::error('body hatası', [
+                            'body' => $body,
+                            ]);
+                        continue;
+                    }
+                }
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
