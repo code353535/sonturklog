@@ -1,6 +1,6 @@
 <div x-data="{dropdownMenu: false}" class="relative" x-cloak="false">
     <button @click="dropdownMenu = ! dropdownMenu" class="hover:text-orange-500 flex items-center">
-        <i class="fa-solid fa-user fa-xl"></i>
+        <i class="fa-solid fa-user fa-lg md:fa-xl"></i>
       </button>
 
       <div x-show="dropdownMenu" class="z-40 absolute -right-2 mt-6 bg-white shadow-md shadow-slate-500/60 w-40"
