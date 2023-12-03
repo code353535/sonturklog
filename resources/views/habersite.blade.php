@@ -1,8 +1,9 @@
 <x-front.layout>
-    <div class="lg:mx-[170px] flex justify-center oswald">
-<div class=" flex items-center py-6 mx-auto font-bold text-xl text-black">Haber Siteleri</div>
-</div>
+    <div class="flex flex-col justify-center items-center inline-block pt-10">
+        <div class="oswald text-4xl font-medium">HABER SİTELERİ</div>
 
+    </div>
+    <hr class="lg:mx-[170px] my-6 border border-gray-200">
 
     <div class="lg:mx-[170px] max-md:mx-4 flex flex-col xl:flex-row gap-4 mt-6">
         <div class="w-full gap-4">
