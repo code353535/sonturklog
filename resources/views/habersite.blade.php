@@ -1,7 +1,6 @@
 <x-front.layout>
     <div class="flex flex-col justify-center items-center inline-block pt-10">
-        <div class="oswald text-4xl font-medium">HABER SİTELERİ</div>
-
+        <div class="oswald text-4xl font-bold">HABER SİTELERİ</div>
     </div>
     <hr class="lg:mx-[170px] my-6 border border-gray-200">
 
