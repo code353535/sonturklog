@@ -80,9 +80,7 @@ class Botara extends Command
 
                     } catch(RequestException $e) {
                         $hatalink = [$e ,$item->katlink];
-
                         if($hatalink){
-
                             Log::error('URL RequestException hatasi.', [
                                 'url' => $item->katlink,
                                 ]);
@@ -105,19 +103,8 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                try {
+
                     $feed = simplexml_load_string($response->getBody(),'SimpleXMLElement',LIBXML_NOCDATA);
-                } catch(Exception $e) {
-                    $hatasil = [$e ,$item->katlink];
-                $sil = $hatasil[1];
-                    if($hatasil){
-                        $deleted = Feed::where('katlink', $sil)->delete();
-                        Log::error('URL exception hatasi sonucu silindi', [
-                            'url' => $item->katlink,
-                            ]);
-                        continue;
-                        }
-            }
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
