@@ -11,6 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Exception;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Http\Client\RequestException;
 
 class Botara extends Command
 {
@@ -104,8 +105,19 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
+               try {
                     $feed = simplexml_load_string($response->body());
-
+                    } catch(RequestException $e) {
+                        $hat = [$e ,$item->katlink];
+                    $sill = $hat[1];
+                        if($hat){
+                            $deleted = Feed::where('katlink', $sill)->delete();
+                            Log::info('URL RequestException hatasi sonucu silindi', [
+                                'url' => $item->katlink,
+                                ]);
+                            continue;
+                            }
+                }
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title && $article->link){
