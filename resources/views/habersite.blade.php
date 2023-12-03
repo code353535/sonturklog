@@ -13,7 +13,7 @@
 
             @foreach ($chunk as $fee)
 
-            <div class="flex flex-col w-full mb-4 border bg-gray-200 shadow-md shadow-slate-500/50 px-4 py-4">
+            <div class="flex flex-col w-full mb-4 border bg-gray-100 shadow-md shadow-slate-500/50 px-4 py-4">
             <div class="flex flex-col mb-2 overflow-hidden xl:max-h-[150px] max-h-[150px]">
                 <a href="{{ $fee->url }}" class="" target="_blank"> <img src="{{ URL::asset('storage/logo/' .$fee->logo) }}" class="xl:h-[170px] h-[270px] min-w-full hover:scale-110 transition duration-500 object-cover" alt=""/></a>
             </div>
