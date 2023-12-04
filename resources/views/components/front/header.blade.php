@@ -1,12 +1,12 @@
 <div x-data="{ Open: false }" class="sticky top-0 z-50 bg-white" x-cloak="false">
     <!-- header -->
-<div class="flex flex-col lg:px-[170px] px-6 max-md:px-0 md:pt-4">
+<div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
 
-    <div class="flex bg-black md:bg-white md:border-b-2 md:pb-4 border-gray-200 max-md:py-8 text-sm font-medium text-white md:text-black items-center justify-between items-center max-h-[50px]">
+    <div class="flex bg-black md:bg-white md:border-b-2 border-gray-200 max-md:py-8 py-4 text-sm font-medium text-white md:text-black items-center justify-between items-center max-md:max-h-[60px]">
 
         <div class="oswald flex flex-row items-center text-md max-md:hidden uppercase gap-2">
             <div class="flex flex-row">
-                <div class="flex items-center waviy text-4xl max-md:text-5xl tracking-[.09em] alfa">
+                <div class="flex items-center waviy text-5xl max-md:text-5xl tracking-[.09em] alfa">
                     <span style="--i:1" class="font-medium">T</span>
                     <span style="--i:2" class="font-medium">U</span>
                     <span style="--i:3" class="font-medium">R</span>
@@ -15,7 +15,7 @@
                     <span style="--i:6" class="font-medium">O</span>
                     <span style="--i:7" class="font-medium">G</span>
              </div>
-             <span class="font-bold text-xs -rotate-90 px-1 text-orange-500">.NET</span>
+             <span class="font-bold text-sm -rotate-90 px-2">.NET</span>
             </div>
 
        <div><a href="/" class="{{ request()->routeIs('front.index') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">HABERLER</a></div>
