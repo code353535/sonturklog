@@ -33,7 +33,7 @@ class Botara extends Command
      */
     public function handle()
     {
-        libxml_use_internal_errors(true);
+
 
             $urls = DB::table('feed')
                 ->get();
