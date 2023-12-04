@@ -14,7 +14,7 @@
 </div>
 <div class="flex basis-1/2 flex-col">
     <div class="flex justify-between py-4 text-white px-4">
-        <div class="text-xs"><a href="" class="hover:underline">{{ $detay->category->ad  }}</a> </div>
+        <div class="text-xs">{{ $detay->category->ad  }}</div>
         <div class="flex text-xs items-center">{{ \Carbon\Carbon::parse($detay->pubdate)->diffForHumans() }}
     </div>
     </div>
