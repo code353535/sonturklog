@@ -100,7 +100,7 @@ class FrontController extends Controller
         $id = $request->id;
 
          $detay = Bot::where('id' ,$id)->first();
-         $kat = $detay->kategori;
+         $kat = $detay?->kategori;
          $kategori =Bot::with('site')->where('kategori', $kat)
          ->wherenotNull('image')
         ->orderByDesc('pubdate')
