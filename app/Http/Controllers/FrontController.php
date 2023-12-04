@@ -170,7 +170,7 @@ class FrontController extends Controller
      public function habersite(){
 
         $habersite = Site::where('anakategori', '2')
-        where('durum', 'onaylandi')
+        ->where('durum', 'onaylandi')
         ->orderBy('ad')
         ->get();
 
