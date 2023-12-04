@@ -21,7 +21,7 @@
        <div><a href="/" class="{{ request()->routeIs('front.index') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">HABERLER</a></div>
        <div> <a href="{{ route('front.bloglar') }}" class="{{ request()->routeIs('front.bloglar') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">Bloglar</a></div>
        <div><x-front.kategoricanvas/></div>
-       <div> <a href="{{ route('front.habersite') }}" class="{{ request()->routeIs('front.habersite') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">Haber Siteleri</a></div>
+       <div> <a href="{{ route('front.habersite') }}" class="{{ request()->routeIs('front.habersite') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">Haber Kaynakları</a></div>
     </div>
     <div class="flex items-center waviy text-2xl tracking-[.09em] alfa md:hidden px-4">
         <span style="--i:1" class="font-medium">T</span>
