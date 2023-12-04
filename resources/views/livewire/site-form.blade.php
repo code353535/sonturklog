@@ -158,10 +158,10 @@
                             </ol>
                           </div>
 
-                          <div x-data="{ count: 0 }" x-init="count = $refs.countme.value.length">
+                          <div x-data="{ count: 0 }" x-init="count=$refs.countme.value.length">
                             <x-input-label for="aciklama" :value="__('Açıklama')" class="pt-8"/>
-                            <textarea id="aciklama" maxlength="280" x-ref="countme" x-on:keyup="count = $refs.countme.value.length" name="aciklama" rows="4" class="mt-1 block p-2.5 w-full border-gray-300 focus:border-orange-500 focus:ring-orange-500" wire:model="aciklama"></textarea>
-                            <span x-bind:class="count < 50 ? 'text-red-500' : 'text-green-500'"  x-html="count"></span> / <span x-html="$refs.countme.maxLength"></span>
+                            <textarea id="aciklama" maxlength="280" x-ref="countme" x-on:keyup="count=$refs.countme.value.length" name="aciklama" rows="4" class="mt-1 block p-2.5 w-full border-gray-300 focus:border-orange-500 focus:ring-orange-500" wire:model="aciklama"></textarea>
+                            <span x-bind:class="count < 50 ? 'text-red-500' : 'text-green-500'" x-html="count"></span> / <span x-html="$refs.countme.maxLength"></span>
                             <span class="text-sm text-red-600 space-y-1">@error('aciklama'){{ $message }}@enderror</span>
                         </div>
 

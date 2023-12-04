@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-screen-xl pt-8 lg:pt-10">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-          <div class="flex justify-center text-black sm:justify-start text-3xl font-bold">
+          <div class="flex justify-center text-black sm:justify-start text-3xl font-medium alfa tracking-[.04em]">
             <img src="{{ asset('image/logo.png') }}" class="float-left mr-2 w-4 h-8" alt="logo" /> Turklog.net
           </div>
 
