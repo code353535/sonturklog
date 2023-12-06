@@ -48,7 +48,7 @@
 
        </div>
     </div>
-    <div class="xl:basis-1/4 max-md:mx-4">
+    <div class="xl:basis-1/4 max-md:mx-4 max-md:hidden">
         <div class="swiper-container1 flex flex-col gap-4 md:min-h-[390px] max-h-[390px]">
             <div class="swiper sample-slider1">
                 <div class="swiper-wrapper">
