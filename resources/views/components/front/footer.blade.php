@@ -203,8 +203,8 @@
 <script>
     var swiper1 = new Swiper(".sample-slider1", {
         direction: 'vertical',
+        effect: 'fade',
         slidesPerView: 1,
-        effect: 'slide',
         spaceBetween: 10,
         allowTouchMove: false,
         loop: true,
