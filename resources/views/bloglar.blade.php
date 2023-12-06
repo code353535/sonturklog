@@ -9,11 +9,12 @@
              @foreach ($yanmansetblog as $fee)
              <div class="swiper-slide">
                 <div class="relative">
+                    <a href="{{ $fee->url }}" class="link" id="{{$fee->id}}" target="_blank">
              <img
              class="max-h-[390px] min-h-[390px] object-center"
              src="{{ $fee->image }}"
              onerror="this.onerror=null;this.src='image/yoksa.png';"
-           />
+           /></a>
 
            <div class="oswald absolute bottom-0 max-md:w-full w-[450px] bg-white max-md:bg-white/80 px-2 py-3">
              <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
