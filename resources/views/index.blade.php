@@ -80,8 +80,6 @@
      </div>
 </div>
 
-
-
 <div class="lg:mx-[170px] max-md:mx-4 md:mt-[30px] max-md:mt-4 max-md:mb-4">
     @foreach($fed->chunk(3) as $chunk)
     <div class="flex xl:flex-row flex-col w-full gap-4">
