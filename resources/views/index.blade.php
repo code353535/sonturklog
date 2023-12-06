@@ -7,11 +7,11 @@
     <div class="swiper-wrapper">
         @foreach ($manset as $fee)
         <div class="swiper-slide">
-          <img
+            <a href="{{ $fee->url }}" class="link" id="{{$fee->id}}" target="_blank"> <img
             class="max-h-[350px] min-h-[350px]"
             src="{{ $fee->image }}" onerror="this.onerror=null;this.src='image/yoksa.png';"
             alt=""
-          />
+          /></a>
           <div class="max-md:hidden absolute top-4 left-0 bg-white text-black px-2 py-1 font-bold text-xs oswald"><i class="fa-regular fa-clock mr-2"></i>GÜNDEM</div>
           <div class="oswald absolute bottom-0 md:w-[400px] w-full bg-black/30 py-3 pl-2">
            <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-sm text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
@@ -85,12 +85,12 @@
     <div class="flex xl:flex-row flex-col w-full gap-4">
         @foreach ($chunk as $fee)
         <div class="relative xl:w-1/3">
-
+            <a href="{{ $fee->url }}" class="link" id="{{$fee->id}}" target="_blank">
             <img
             class="max-h-[240px] min-h-[240px] w-full object-cover"
             src="{{ $fee->image }}" onerror="this.onerror=null;this.src='image/yoksa.png';"
             alt=""
-          />
+          /></a>
           <div class="oswald absolute bottom-0 w-full bg-black/30 py-2">
             <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
              <div class="text-white px-2 py-1 font-semibold text-lg leading-6 py-1"><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link hover:underline" target="_blank"> {{ $fee->baslik }}</a>
