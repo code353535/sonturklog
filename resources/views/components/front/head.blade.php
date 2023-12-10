@@ -19,7 +19,7 @@
               position: relative;
               display: inline-block;
               animation: flip 30s infinite;
-              animation-delay: calc(.3s * var(--i))
+              animation-delay: calc(.2s * var(--i))
             }
             @keyframes flip {
               0%,80% {

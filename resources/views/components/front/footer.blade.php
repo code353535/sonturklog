@@ -147,6 +147,7 @@
 
 
 @livewireScripts
+
 <script>
     // Get the 'to top' button element by ID
     var toTopButton = document.getElementById("to-top-button");

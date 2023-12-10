@@ -34,5 +34,6 @@ class AppServiceProvider extends ServiceProvider
             $view->with('anacategory',
             $AAcategory = Category::where('anacategory_id', '2')->orderBy('ad')->get());
         });
+
     }
 }

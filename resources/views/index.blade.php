@@ -1,5 +1,6 @@
 <x-front.layout>
 
+
 <div class="lg:mx-[170px] mx-6 max-md:mx-0 flex flex-col xl:flex-row md:mt-6 gap-4">
 
     <div class="swiper-container xl:basis-2/4">
