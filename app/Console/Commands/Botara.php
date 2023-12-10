@@ -112,6 +112,8 @@ class Botara extends Command
 
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
+                                    $baslik = strip_tags($article->title);
+
                                     $postDate = $article->pubDate;
                                     $pubdate = date('Y-m-d H:i:s',strtotime($postDate));
 
@@ -135,7 +137,7 @@ class Botara extends Command
                                     'anakategori' => $anakategori,
                                     'aciklama' => $des,
                                     'feed_id' => $feed_id,
-                                    'baslik' => $article->title,
+                                    'baslik' => $baslik,
                                     'url' => $article->link,
                                     'image' => $src,
                                     'pubdate' => $pubdate,
@@ -154,7 +156,7 @@ class Botara extends Command
                                 'anakategori' => $anakategori,
                                 'aciklama' => $des,
                                 'feed_id' => $feed_id,
-                                'baslik' => $article->title,
+                                'baslik' => $baslik,
                                 'url' => $article->link,
                                 'image' => $src,
                                 'pubdate' => $pubdate,
@@ -171,7 +173,7 @@ class Botara extends Command
                                 'anakategori' => $anakategori,
                                 'aciklama' => $des,
                                 'feed_id' => $feed_id,
-                                'baslik' => $article->title,
+                                'baslik' => $baslik,
                                 'url' => $article->link,
                                 'image' => $src,
                                 'pubdate' => $pubdate,
@@ -188,7 +190,7 @@ class Botara extends Command
                                 'anakategori' => $anakategori,
                                 'aciklama' => $des,
                                 'feed_id' => $feed_id,
-                                'baslik' => $article->title,
+                                'baslik' => $baslik,
                                 'url' => $article->link,
                                 'image' => $src,
                                 'pubdate' => $pubdate,
@@ -206,7 +208,7 @@ class Botara extends Command
                                 'anakategori' => $anakategori,
                                 'aciklama' => $des,
                                 'feed_id' => $feed_id,
-                                'baslik' => $article->title,
+                                'baslik' => $baslik,
                                 'url' => $article->link,
                                 'image' => $src,
                                 'pubdate' => $pubdate,
@@ -224,7 +226,7 @@ class Botara extends Command
                                 'anakategori' => $anakategori,
                                 'aciklama' => $des,
                                 'feed_id' => $feed_id,
-                                'baslik' => $article->title,
+                                'baslik' => $baslik,
                                 'url' => $article->link,
                                 'image' => $src,
                                 'pubdate' => $pubdate,
@@ -246,7 +248,7 @@ class Botara extends Command
                             'anakategori' => $anakategori,
                             'aciklama' => $des,
                             'feed_id' => $feed_id,
-                            'baslik' => $article->title,
+                            'baslik' => $baslik,
                             'url' => $article->link,
                             'image' => $src,
                             'pubdate' => $pubdate,
@@ -263,7 +265,7 @@ class Botara extends Command
                             'anakategori' => $anakategori,
                             'aciklama' => $des,
                             'feed_id' => $feed_id,
-                            'baslik' => $article->title,
+                            'baslik' => $baslik,
                             'url' => $article->link,
                             'pubdate' => $pubdate,
                             'tiklasay' => '1',
