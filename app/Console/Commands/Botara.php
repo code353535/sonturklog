@@ -112,7 +112,8 @@ class Botara extends Command
 
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
-                                    $baslik = strip_tags($article->title);
+                                    $baslik = html_entity_decode($article->title);
+
 
                                     $postDate = $article->pubDate;
                                     $pubdate = date('Y-m-d H:i:s',strtotime($postDate));
