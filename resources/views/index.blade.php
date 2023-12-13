@@ -66,7 +66,7 @@
             <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
              <div class="text-white px-2 py-1 font-semibold text-lg leading-6 py-1"><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link hover:underline" target="_blank"> {{ $fee->baslik }}</a>
              </div>
-             <div class="text-xs font-bold px-2 text-white"><a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline text-white">{{ $fee->site?->ad }}</a> - <span class="text-white font-light"> {{ \Carbon\Carbon::parse($fee->pubdate)->diffForHumans() }} - <a href="{{route('front.detaylar',['id' => $fee->id, 'slug' =>  Str::slug($fee->baslik)])}}" target="_blank" class="hover:underline text-white">detaylar</a></span></div>
+             <div class="text-xs font-bold px-2 text-white"><a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline text-white">{{ $fee->site?->ad }}</a> - <span class="text-white font-light"> {{ \Carbon\Carbon::parse($fee->pubdate)->diffForHumans() }} </span></div>
            </div>
         </div>
           @endforeach
@@ -96,7 +96,7 @@
             <div class="px-2"><span class="inline-flex items-center bg-orange-500 px-2 text-xs text-white ring-0"><a href="{{ route('front.kategori',['cat' => $fee->category->slug]) }}" class="hover:text-black">{{ $fee->category->ad }}</a></span></div>
              <div class="text-white px-2 py-1 font-semibold text-lg leading-6 py-1"><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link hover:underline" target="_blank"> {{ $fee->baslik }}</a>
              </div>
-             <div class="text-xs font-bold px-2"><a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline text-white">{{ $fee->site?->ad }}</a> - <span class="text-white font-light">{{ \Carbon\Carbon::parse($fee->pubdate)->diffForHumans() }} - <a href="{{route('front.detaylar',['id' => $fee->id, 'slug' =>  Str::slug($fee->baslik)])}}" target="_blank" class="hover:underline text-white">detaylar</a></span></div>
+             <div class="text-xs font-bold px-2"><a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline text-white">{{ $fee->site?->ad }}</a> - <span class="text-white font-light">{{ \Carbon\Carbon::parse($fee->pubdate)->diffForHumans() }} </span></div>
            </div>
 
     </div>
@@ -128,7 +128,7 @@
         <div class="text-xs flex items-center px-2"><img src="{{ URL::asset('storage/logo/' .$fee->site?->logo) }}" class="h-6 w-6 mr-2" /> <a href="{{ $fee->site?->url}}" target="_blank" class="hover:underline">{{ $fee->site?->ad }}</a>
         </div>
         <div class="flex text-xs items-center text-black">
-            <a href="{{route('front.detaylar',['id' => $fee->id, 'slug' =>  Str::slug($fee->baslik)])}}" target="_blank" class="hover:underline pr-2">detaylar</a>
+
             </div>
     </div>
     <div class="oswald flex grow px-1 text-lg font-bold pb-3 px-2"><a href="{{ $fee->url }}" id="{{$fee->id}}" class="link hover:underline" target="_blank">{{ $fee->baslik }}</a></div>
