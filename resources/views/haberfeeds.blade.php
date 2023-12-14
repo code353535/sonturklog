@@ -17,6 +17,7 @@
                 <guid>{{$haber->id }}</guid>
                 <pubDate>{{ $haber->pubdate }}</pubDate>
                 <image>{{ $haber->image }}</image>
+                <media:content url="{{ $haber->image }}" medium="image"/>
             </item>
         @endforeach
     </channel>
