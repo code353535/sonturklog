@@ -109,7 +109,7 @@ class Botara extends Command
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
-
+                                if($article->title && $article->link){
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
                                     $baslik = html_entity_decode($article->title);
@@ -274,7 +274,7 @@ class Botara extends Command
                             'updated_at' => Carbon::now()
                         ]);
                     }
-
+                }
                     }
 
                 }
