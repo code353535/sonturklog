@@ -15,6 +15,7 @@ use App\Http\Controllers\AdminsiteController;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\AdmintalepController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\RssFeedController;
 
 
 /*
@@ -29,6 +30,10 @@ use App\Http\Controllers\FrontController;
 */
 
 Route::get('/',  [FrontController::class, 'index'])->name('front.index');
+
+
+Route::get('/haberfeed',  [RssFeedController::class, 'haberfeed']);
+Route::get('/blogfeed',  [RssFeedController::class, 'blogfeed']);
 
 Route::get('/kategori/{cat}',  [FrontController::class, 'kategorilist'])->name('front.kategori');
 Route::get('/sss', [SiteController::class, 'sss'])->name('sss');
