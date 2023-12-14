@@ -20,8 +20,8 @@ class AdminsiteController extends Controller
 {
     public function index(){
 
-        $site = Site::all();
-        return view('admin.siteler.sitelist',['site' => $site]);
+
+        return view('admin.siteler.sitelist');
 }
 
 public function update(site $site){
