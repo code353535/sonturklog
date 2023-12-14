@@ -20,33 +20,33 @@
           class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2"
         >
           <div class="text-center sm:text-left">
-            <p class="text-lg font-medium text-orange-500 oswald">Kullanıcı İşlemleri</p>
+            <p class="text-lg font-medium text-orange-500 oswald">Menü</p>
 
             <ul class="mt-8 space-y-4 text-sm">
               <li>
                 <a
                   class="text-gray-700 transition hover:text-gray-700/75"
-                  href="/login"
+                  href="/"
                 >
-                  Giriş Yap
+                  Haberler
                 </a>
               </li>
 
               <li>
                 <a
                   class="text-gray-700 transition hover:text-gray-700/75"
-                  href="/register"
+                  href="{{ route('front.bloglar') }}"
                 >
-                  Kayıt Ol
+                  Bloglar
                 </a>
               </li>
 
               <li>
                 <a
                   class="text-gray-700 transition hover:text-gray-700/75"
-                  href="/forgot-password"
+                  href="{{ route('front.habersite') }}"
                 >
-                  Şifremi Unuttum
+                  Haber Kaynakları
                 </a>
               </li>
 
