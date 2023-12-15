@@ -113,7 +113,7 @@ class Botara extends Command
                                 if($article->title){
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
-                                    $baslik = html_entity_decode($article->title, ENT_COMPAT, 'UTF-8');
+                                    $baslik = htmlspecialchars($article->title, ENT_QUOTES, 'UTF-8');
 
 
                                     $postDate = $article->pubDate;
