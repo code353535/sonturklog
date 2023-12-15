@@ -48,18 +48,10 @@ class Botara extends Command
 
                     try {
 
-                        $response = Http::timeout(60)
+                        $response = Http::timeout(30)
                         ->get($item->katlink);
 
-                        if ($response->throw()) {
-                            $r = Http::post($item->katlink);
-                            if($r->failed()) {
-                            Log::error('URL RequestException hatasi.', [
-                                'url' => $item->katlink,
-                                ]);
-                                continue;
-                        }
-                    }
+
                         if ($response->clientError()) {
                             $r = Http::post($item->katlink);
 
@@ -114,8 +106,8 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                $body = $response->getBody()->getContents();
-                $feed = simplexml_load_string($body);
+
+                $feed = simplexml_load_string($response->body());
 
                         if($feed){
                             foreach ($feed->channel->item as $article) {
