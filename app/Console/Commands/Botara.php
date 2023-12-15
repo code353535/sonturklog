@@ -11,6 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
+use GuzzleHttp\Exception\RequestException;
 
 class Botara extends Command
 {
@@ -104,9 +105,17 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-
+                try {
                 $feed = simplexml_load_string($response->body());
-
+            } catch (RequestException $e) {
+                if ($e->hasResponse()) {
+                    $response = $e->getResponse();
+                    $body = $response->getBody()->getContents();
+                    Log::error('body hatası.', [
+                        'body' => $body,
+                        ]);
+                }
+            }
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title){
@@ -279,6 +288,8 @@ class Botara extends Command
 
                 }
             }
+
         }
 }
 }
+
