@@ -11,7 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
-use GuzzleHttp\Exception\RequestException;
+
 
 class Botara extends Command
 {
