@@ -15,7 +15,7 @@
                     <span style="--i:6" class="font-medium">O</span>
                     <span style="--i:7" class="font-medium">G</span>
              </div>
-             <span class="font-bold text-sm -rotate-90 px-2">.NET</span>
+             <span class="font-bold text-lg -rotate-90 text-gray-300">.NET</span>
             </div>
 
        <div><a href="/" class="{{ request()->routeIs('front.index') ? 'text-white bg-black':'' }} py-2 hover:text-white hover:bg-black px-2">HABERLER</a></div>
