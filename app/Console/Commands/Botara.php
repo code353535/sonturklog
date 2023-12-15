@@ -11,7 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
-
+use Illuminate\Http\Client\RequestException;
 
 class Botara extends Command
 {
@@ -51,6 +51,15 @@ class Botara extends Command
                         $response = Http::timeout(60)
                         ->get($item->katlink);
 
+                        if ($response->throw()) {
+                            $r = Http::post($item->katlink);
+                            if($r->failed()) {
+                            Log::error('URL RequestException hatasi.', [
+                                'url' => $item->katlink,
+                                ]);
+                                continue;
+                        }
+                    }
                         if ($response->clientError()) {
                             $r = Http::post($item->katlink);
 
@@ -82,7 +91,7 @@ class Botara extends Command
                     $sil = $hatasil[1];
                         if($hatasil){
                             $deleted = Feed::where('katlink', $sil)->delete();
-                            Log::error('URL RequestException hatasi. Url silindi.', [
+                            Log::error('URL Exception hatasi. Url silindi.', [
                                 'url' => $item->katlink,
                                 ]);
                             continue;
