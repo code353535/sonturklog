@@ -105,31 +105,15 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-try{
-                $feed = simplexml_load_string($response->body());
-            } catch (GuzzleHttp\Exception\RequestException $e) {
-                if ($e->hasResponse()) {
-                    $response = $e->getResponse();
-                    $statusCode = $response->getStatusCode();
-                    $body = $response->getBody()->getContents(); // Get the response body
-                    // Handle the response or log the details as needed
-                } else {
-                    // Handle the case where no response was received
-                    Log::error('RequestException: No response received for the request.');
-                }
 
-                // Handle other aspects of the exception or take necessary actions
-                Log::error('URL RequestException occurred', [
-                    'error' => $e->getMessage(),
-                    'url' => $item->katlink,
-                ]);
-            }
+                $feed = simplexml_load_string($response->body());
+
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title){
                                     $desc = $article->description;
                                     $des = strip_tags($desc);
-                                    $baslik = htmlspecialchars($article->title, ENT_QUOTES, 'UTF-8');
+                                    $baslik = html_entity_decode($article->title, ENT_COMPAT, 'UTF-8');
 
 
                                     $postDate = $article->pubDate;
