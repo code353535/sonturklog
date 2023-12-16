@@ -108,7 +108,7 @@ class Botara extends Command
                 $anakategori = explode('|', $alias)[5];
 
                 if ($statusCode >= 200 && $statusCode < 300) {
-                $body = $response->body();
+                $body = $response->getBody()->getContents();
                 $feed = simplexml_load_string($body);
             } else {
                 $statusCode = $response->status();
