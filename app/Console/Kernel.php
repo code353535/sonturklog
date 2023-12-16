@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         $schedule->command('app:botara')
-        ->everyMinute();
+        ->everyTenSeconds();
 
         $schedule->call(function () {
             $now = \Carbon\Carbon::now();
