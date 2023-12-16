@@ -107,7 +107,7 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                if ($response->successful()) {
+                if ($statusCode >= 200 && $statusCode < 300) {
                 $body = $response->body();
                 $feed = simplexml_load_string($body);
             } else {
