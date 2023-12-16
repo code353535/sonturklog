@@ -114,7 +114,7 @@ class Botara extends Command
                 if ($e->hasResponse()) {
                     $response = $e->getResponse();
                     $statusCode = $response->getStatusCode();
-                    Log::alert('Bir Hata Oluştu', [
+                    Log::error('Bir Hata Oluştu', [
                         'hatakodu' => $statusCode,
                         'url' => $item->katlink,
                         'response' =>$response,
