@@ -12,7 +12,7 @@ use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
 use Illuminate\Http\Client\RequestException;
-use Psr\Http\Message\ResponseInterface;
+
 
 class Botara extends Command
 {
@@ -112,14 +112,11 @@ class Botara extends Command
                 $feed = simplexml_load_string($body);
             } catch (RequestException $e) {
                 if ($e->hasResponse()) {
-                    if ($response instanceof ResponseInterface) {
-
-                    $statusCode = $response->getStatusCode();
-                    $body = $response->getBody()->getContents();
+                    $errorMessage = $e->getMessage();
                     Log::error('Bir Hata Oluştu', [
-                        'hatakodu' => $statusCode,
-                        'url' => $item->katlink,
-                        'body' =>$body,
+                        'mesaj' => $errorMessage,
+
+
                         ]);
                     }
                 }
