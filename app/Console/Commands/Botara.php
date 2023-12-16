@@ -107,9 +107,17 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
+                if ($response->successful()) {
                 $body = $response->body();
-                $feed = simplexml_load_string($body());
+                $feed = simplexml_load_string($body);
+            } else {
+                $statusCode = $response->status();
+                Log::alert('Bir Hata Oluştu', [
+                    'hatakodu' => $statusCode,
+                    'url' => $item->katlink,
+                    ]);
 
+            }
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title){
