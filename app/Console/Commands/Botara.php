@@ -11,7 +11,7 @@ use Illuminate\Http\Client\Response;
 use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
-use Illuminate\Http\Client\RequestException;
+
 
 
 class Botara extends Command
@@ -107,17 +107,10 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                try {
+
                 $body = $response->getBody()->getContents();
                 $feed = simplexml_load_string($body);
-            } catch (RequestException $e) {
-                if ($e->hasResponse()) {
-                    $errorMessage = $e->getMessage();
-                    Log::error('Bir Hata Oluştu', [
-                        'mesaj' => $errorMessage,
-                        ]);
-                    }
-                }
+
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title){
