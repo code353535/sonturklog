@@ -107,16 +107,22 @@ class Botara extends Command
                 $feed_id = explode('|', $alias)[4];
                 $anakategori = explode('|', $alias)[5];
 
-                $statusCode = $response->getStatusCode();
-                if ($statusCode >= 200 && $statusCode < 300) {
+                try {
                 $body = $response->getBody()->getContents();
                 $feed = simplexml_load_string($body);
-            } else {
-                $statusCode = $response->getStatusCode();
-                Log::alert('Bir Hata Oluştu', [
-                    'hatakodu' => $statusCode,
-                    'url' => $item->katlink,
-                    ]);
+            } catch (RequestException $e) {
+                if ($e->hasResponse()) {
+                    $response = $e->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    Log::alert('Bir Hata Oluştu', [
+                        'hatakodu' => $statusCode,
+                        'url' => $item->katlink,
+                        'response' =>$response,
+                        ]);
+
+                }
+            }
+
 
             }
                         if($feed){
