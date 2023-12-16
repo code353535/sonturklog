@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Log;
 use Exception;
 use Illuminate\Http\Client\RequestException;
 
+
 class Botara extends Command
 {
     /**
@@ -133,7 +134,7 @@ class Botara extends Command
 
                                     $src = $matches[1];
 
-                                DB::table('bot')->insertOrIgnore([
+                                    $data = [
                                     'site_id' => $site_id,
                                     'user_id' => $user_id,
                                     'kategori' => $kategori,
@@ -147,12 +148,13 @@ class Botara extends Command
                                     'tiklasay' => '1',
                                     'created_at' => Carbon::now(),
                                     'updated_at' => Carbon::now()
-                                ]);
+                                ];
+                                DB::table('bot')->insertOrIgnore($data);
 
 
                         }elseif($article->children("media", true)->content->attributes() != null){
                             $src = $article->children("media", true)->content->attributes();
-                            DB::table('bot')->insertOrIgnore([
+                            $data = [
                                 'site_id' => $site_id,
                                 'user_id' => $user_id,
                                 'kategori' => $kategori,
@@ -166,10 +168,13 @@ class Botara extends Command
                                 'tiklasay' => '1',
                                 'created_at' => Carbon::now(),
                                 'updated_at' => Carbon::now()
-                            ]);
+                            ];
+                            DB::table('bot')->insertOrIgnore($data);
+
+
                         }elseif($article->image){
                             $src = $article->image;
-                            DB::table('bot')->insertOrIgnore([
+                            $data = [
                                 'site_id' => $site_id,
                                 'user_id' => $user_id,
                                 'kategori' => $kategori,
@@ -183,82 +188,92 @@ class Botara extends Command
                                 'tiklasay' => '1',
                                 'created_at' => Carbon::now(),
                                 'updated_at' => Carbon::now()
-                            ]);
+                            ];
+                            DB::table('bot')->insertOrIgnore($data);
+
+
                         }elseif($article->imageUrl){
                             $src = $article->imageUrl;
-                            DB::table('bot')->insertOrIgnore([
-                                'site_id' => $site_id,
-                                'user_id' => $user_id,
-                                'kategori' => $kategori,
-                                'anakategori' => $anakategori,
-                                'aciklama' => $des,
-                                'feed_id' => $feed_id,
-                                'baslik' => $baslik,
-                                'url' => $article->link,
-                                'image' => $src,
-                                'pubdate' => $pubdate,
-                                'tiklasay' => '1',
-                                'created_at' => Carbon::now(),
-                                'updated_at' => Carbon::now()
-                            ]);
+                            $data = [
+                                    'site_id' => $site_id,
+                                    'user_id' => $user_id,
+                                    'kategori' => $kategori,
+                                    'anakategori' => $anakategori,
+                                    'aciklama' => $des,
+                                    'feed_id' => $feed_id,
+                                    'baslik' => $baslik,
+                                    'url' => $article->link,
+                                    'image' => $src,
+                                    'pubdate' => $pubdate,
+                                    'tiklasay' => '1',
+                                    'created_at' => Carbon::now(),
+                                    'updated_at' => Carbon::now()
+                                ];
+                                DB::table('bot')->insertOrIgnore($data);
+
+
                         }elseif($article->children("media", true)->thumbnail->attributes() != null){
                             $srcc = $article->children("media", true)->thumbnail->attributes();
                             $src = $srcc['url'];
-                            DB::table('bot')->insertOrIgnore([
-                                'site_id' => $site_id,
-                                'user_id' => $user_id,
-                                'kategori' => $kategori,
-                                'anakategori' => $anakategori,
-                                'aciklama' => $des,
-                                'feed_id' => $feed_id,
-                                'baslik' => $baslik,
-                                'url' => $article->link,
-                                'image' => $src,
-                                'pubdate' => $pubdate,
-                                'tiklasay' => '1',
-                                'created_at' => Carbon::now(),
-                                'updated_at' => Carbon::now()
-                            ]);
+                             $data = [
+                                    'site_id' => $site_id,
+                                    'user_id' => $user_id,
+                                    'kategori' => $kategori,
+                                    'anakategori' => $anakategori,
+                                    'aciklama' => $des,
+                                    'feed_id' => $feed_id,
+                                    'baslik' => $baslik,
+                                    'url' => $article->link,
+                                    'image' => $src,
+                                    'pubdate' => $pubdate,
+                                    'tiklasay' => '1',
+                                    'created_at' => Carbon::now(),
+                                    'updated_at' => Carbon::now()
+                                ];
+                                DB::table('bot')->insertOrIgnore($data);
+
+
                         }elseif($article->enclosure->attributes() != null){
                             $srcc = $article->enclosure->attributes();
                             $src = $srcc['url'];
-                            DB::table('bot')->insertOrIgnore([
-                                'site_id' => $site_id,
-                                'user_id' => $user_id,
-                                'kategori' => $kategori,
-                                'anakategori' => $anakategori,
-                                'aciklama' => $des,
-                                'feed_id' => $feed_id,
-                                'baslik' => $baslik,
-                                'url' => $article->link,
-                                'image' => $src,
-                                'pubdate' => $pubdate,
-                                'tiklasay' => '1',
-                                'created_at' => Carbon::now(),
-                                'updated_at' => Carbon::now()
-                            ]);
-
+                               $data = [
+                                    'site_id' => $site_id,
+                                    'user_id' => $user_id,
+                                    'kategori' => $kategori,
+                                    'anakategori' => $anakategori,
+                                    'aciklama' => $des,
+                                    'feed_id' => $feed_id,
+                                    'baslik' => $baslik,
+                                    'url' => $article->link,
+                                    'image' => $src,
+                                    'pubdate' => $pubdate,
+                                    'tiklasay' => '1',
+                                    'created_at' => Carbon::now(),
+                                    'updated_at' => Carbon::now()
+                                ];
+                                DB::table('bot')->insertOrIgnore($data);
 
 
                         }elseif(preg_match( '|<img.*?src=[\'"](.*?)[\'"].*?>|i', $image, $matches)){
                             $src = $matches[1];
 
+                            $data = [
+                                'site_id' => $site_id,
+                                'user_id' => $user_id,
+                                'kategori' => $kategori,
+                                'anakategori' => $anakategori,
+                                'aciklama' => $des,
+                                'feed_id' => $feed_id,
+                                'baslik' => $baslik,
+                                'url' => $article->link,
+                                'image' => $src,
+                                'pubdate' => $pubdate,
+                                'tiklasay' => '1',
+                                'created_at' => Carbon::now(),
+                                'updated_at' => Carbon::now()
+                            ];
+                            DB::table('bot')->insertOrIgnore($data);
 
-                        DB::table('bot')->insertOrIgnore([
-                            'site_id' => $site_id,
-                            'user_id' => $user_id,
-                            'kategori' => $kategori,
-                            'anakategori' => $anakategori,
-                            'aciklama' => $des,
-                            'feed_id' => $feed_id,
-                            'baslik' => $baslik,
-                            'url' => $article->link,
-                            'image' => $src,
-                            'pubdate' => $pubdate,
-                            'tiklasay' => '1',
-                            'created_at' => Carbon::now(),
-                            'updated_at' => Carbon::now()
-                        ]);
 
                     }else{
                         DB::table('bot')->insertOrIgnore([
