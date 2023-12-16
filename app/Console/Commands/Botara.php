@@ -112,14 +112,16 @@ class Botara extends Command
                 $feed = simplexml_load_string($body);
             } catch (RequestException $e) {
                 if ($e->hasResponse()) {
-                    $response = $e->getResponse();
+                    if ($response instanceof ResponseInterface) {
+
                     $statusCode = $response->getStatusCode();
+                    $body = $response->getBody()->getContents();
                     Log::error('Bir Hata Oluştu', [
                         'hatakodu' => $statusCode,
                         'url' => $item->katlink,
-                        'response' =>$response,
+                        'body' =>$body,
                         ]);
-
+                    }
                 }
             }
 
