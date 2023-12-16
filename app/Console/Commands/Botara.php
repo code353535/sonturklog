@@ -12,7 +12,7 @@ use App\Models\Feed;
 use Illuminate\Support\Facades\Log;
 use Exception;
 use Illuminate\Http\Client\RequestException;
-
+use Psr\Http\Message\ResponseInterface;
 
 class Botara extends Command
 {
