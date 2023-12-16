@@ -115,13 +115,9 @@ class Botara extends Command
                     $errorMessage = $e->getMessage();
                     Log::error('Bir Hata Oluştu', [
                         'mesaj' => $errorMessage,
-
-
                         ]);
                     }
                 }
-            }
-
                         if($feed){
                             foreach ($feed->channel->item as $article) {
                                 if($article->title){
