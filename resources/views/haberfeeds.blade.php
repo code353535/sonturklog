@@ -11,7 +11,7 @@
 
         @foreach($haberfeeds as $haber)
             <item>
-                <title><![CDATA[{{ $haber->baslik }}]]></title>
+                <title>{{ $haber->baslik }}</title>
                 <link>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</link>
                 <description><![CDATA[{!! $haber->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>

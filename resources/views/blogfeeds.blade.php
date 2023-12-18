@@ -11,7 +11,7 @@
 
         @foreach($blogfeeds as $blog)
             <item>
-                <title><![CDATA[{{ $blog->baslik }}]]></title>
+                <title>{{ $blog->baslik }}</title>
                 <link>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</link>
                 <description><![CDATA[{!! $blog->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</guid>
