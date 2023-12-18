@@ -15,7 +15,7 @@
                 <link>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</link>
                 <description><![CDATA[{!! $blog->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</guid>
-                <pubDate>{{ date("D, d M Y G:i:s T", strtotime($blog->pubdate)) }}</pubDate>
+                <pubDate>{{ \Carbon\Carbon::parse($blog->pubdate)->format('D, d M Y H:i:s') . ' ' . \Carbon\Carbon::parse($blog->pubdate)->timezone->getName() }}</pubDate>
                 <image>{{ $blog->image }}</image>
             </item>
         @endforeach
