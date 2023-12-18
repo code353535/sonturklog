@@ -15,7 +15,7 @@
                 <link>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</link>
                 <description><![CDATA[{!! $haber->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>
-                <pubDate>{{ date("D, d M Y H:i:s O", strtotime($haber->pubDate)) }}</pubDate>
+                <pubDate>{{ date("D, d M Y H:i:s O", strtotime($haber->pubdate)) }}</pubDate>
 
             </item>
         @endforeach
