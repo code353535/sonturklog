@@ -16,9 +16,7 @@
                 <description><![CDATA[{!! $haber->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>
                 @php
-                use Carbon\Carbon;
-                // Convert your post's created_at timestamp to a Carbon instance
-                $pubDate = Carbon::parse($haber->created_at)->format('D, d M Y H:i:s') . ' ' . Carbon::parse($haber->created_at)->timezone->getName();
+                $pubDate = \Carbon\Carbon::parse($haber->created_at)->format('D, d M Y H:i:s') . ' ' . Carbon::parse($haber->created_at)->timezone->getName();
             @endphp
                 <pubDate>{{ $pubDate }}</pubDate>
                 <image>{{ $haber->image }}</image>
