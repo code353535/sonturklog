@@ -17,7 +17,9 @@
                 <guid>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>
                 <pubDate>{{ date("D, d M Y G:i:s T", strtotime($haber->pubdate)) }}</pubDate>
                 <image>{{ $haber->image }}</image>
-
+                <content:encoded><![CDATA[<figure><img src="{{ $haber->image }}" class="type:primaryImage" /></figure>
+                <p>Complete article here</p>
+                ]]></content:encoded>
             </item>
         @endforeach
     </channel>
