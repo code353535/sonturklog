@@ -12,10 +12,10 @@
         @foreach($haberfeeds as $haber)
             <item>
                 <title><![CDATA[{{ $haber->baslik }}]]></title>
-                <link>{{ $haber->url }}</link>
+                <link>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</link>
                 <description><![CDATA[{!! $haber->aciklama !!}]]></description>
-                <guid>{{$haber->id }}</guid>
-                <pubDate>{{ $haber->pubdate }}</pubDate>
+                <guid>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>
+                <pubDate>{{ date("D, d M Y H:i:s T", strtotime($haber->pubdate)) }}</pubDate>
                 <image>{{ $haber->image }}</image>
 
             </item>

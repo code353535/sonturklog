@@ -12,10 +12,10 @@
         @foreach($blogfeeds as $blog)
             <item>
                 <title><![CDATA[{{ $blog->baslik }}]]></title>
-                <link>{{ $blog->url }}</link>
+                <link>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</link>
                 <description><![CDATA[{!! $blog->aciklama !!}]]></description>
-                <guid>{{$blog->id }}</guid>
-                <pubDate>{{ $blog->pubdate }}</pubDate>
+                <guid>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</guid>
+                <pubDate>{{ date("D, d M Y H:i:s T", strtotime($blog->pubdate)) }}</pubDate>
                 <image>{{ $blog->image }}</image>
 
             </item>
