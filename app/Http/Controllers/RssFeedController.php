@@ -11,7 +11,7 @@ class RssFeedController extends Controller
     {
         $haberfeeds = Bot::where('anakategori', '2')->
         orderBy('pubdate', 'desc')->
-        limit(60)->get();
+        limit(50)->get();
         return response()->view('haberfeeds', compact('haberfeeds'))->header('Content-Type', 'application/xml');
 
     }
@@ -19,7 +19,7 @@ class RssFeedController extends Controller
     {
         $blogfeeds = Bot::where('anakategori', '1')->
         orderBy('pubdate', 'desc')->
-        limit(60)->get();
+        limit(50)->get();
         return response()->view('blogfeeds', compact('blogfeeds'))->header('Content-Type', 'application/xml');
 
     }

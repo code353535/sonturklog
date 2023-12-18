@@ -15,7 +15,7 @@
                 <link>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</link>
                 <description><![CDATA[{!! $blog->aciklama !!}]]></description>
                 <guid>{{ 'https://turklog.net/detaylar/' . $blog->id . '/' . Str::slug($blog->baslik) }}</guid>
-                <pubDate>{{ date("D, d M Y G:i:s T", strtotime($blog->pubdate)) }}</pubDate>
+                <pubDate>{{ date(DATE_RSS, strtotime($blog->pubdate)) }}</pubDate>
                 <image>{{ $blog->image }}</image>
             </item>
         @endforeach
