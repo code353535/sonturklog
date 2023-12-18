@@ -17,7 +17,6 @@
                 <guid isPermaLink=”true”>{{ 'https://turklog.net/detaylar/' . $haber->id . '/' . Str::slug($haber->baslik) }}</guid>
                 <pubDate>{{ date("D, d M Y G:i:s T", strtotime($haber->pubdate)) }}</pubDate>
                 <image>{{ $haber->image }}</image>
-
             </item>
         @endforeach
     </channel>
