@@ -7,7 +7,7 @@
         <link><![CDATA[ https://turklog.net/haberfeed]]></link>
         <description><![CDATA[ Haberleri ve gündemi takip edin ]]></description>
         <language>tr</language>
-        <pubDate>{{ now() }}</pubDate>
+        <pubDate>{{ now()->format('D, d M Y H:i:s O') }}</pubDate>
 
         @foreach($haberfeeds as $haber)
             <item>

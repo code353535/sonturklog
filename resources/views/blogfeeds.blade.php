@@ -7,7 +7,7 @@
         <link><![CDATA[ https://turklog.net/blogfeed]]></link>
         <description><![CDATA[ Blogları takip edin ]]></description>
         <language>tr</language>
-        <pubDate>{{ now() }}</pubDate>
+        <pubDate>{{ now()->format('D, d M Y H:i:s O') }}</pubDate>
 
         @foreach($blogfeeds as $blog)
             <item>
