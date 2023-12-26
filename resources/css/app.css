@@ -9,8 +9,8 @@
     font-family: 'Noto Sans', sans-serif;
 }
 .adsbygoogle {
-
-        margin: 170px auto !important;
+    display: flex;
+    justify-content: center;
 
 }
 .oswald {
