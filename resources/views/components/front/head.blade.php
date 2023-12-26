@@ -60,7 +60,7 @@
     <body>
         <div style="text-align:center;margin-bottom:10px;">
             <div style="
-                max-width:729px;
+                max-width:970px;
                 display:block;margin-left:auto;margin-right:auto;
                 text-align: center;">
                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
