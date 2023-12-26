@@ -30,23 +30,7 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
-        <div style="text-align:center;margin-bottom:10px;">
-            <div style="
-                max-width:729px;
-                display:block;margin-left:auto;margin-right:auto;
-                text-align: center;">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
-        crossorigin="anonymous"></script>
-   <!-- yatay72890 -->
-   <ins class="adsbygoogle flex justify-center"
-        style="display:inline-block;width:728px;height:90px"
-        data-ad-client="ca-pub-7405579499369683"
-        data-ad-slot="2282302965"></ins>
-   <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-</div>
-</div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <meta name="yandex-verification" content="950121826458f0f4" />
         <meta name="google-adsense-account" content="ca-pub-7405579499369683">
@@ -74,3 +58,20 @@
      />
     </head>
     <body>
+        <div style="text-align:center;margin-bottom:10px;">
+            <div style="
+                max-width:729px;
+                display:block;margin-left:auto;margin-right:auto;
+                text-align: center;">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+        crossorigin="anonymous"></script>
+   <!-- yatay72890 -->
+   <ins class="adsbygoogle flex justify-center"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-7405579499369683"
+        data-ad-slot="2282302965"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</div>
+</div>
