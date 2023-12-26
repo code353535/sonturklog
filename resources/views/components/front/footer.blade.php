@@ -137,42 +137,12 @@
       </div>
     </div>
   </footer>
-  <button id="to-top-button" onclick="goToTop()" title="Go To Top"
-  class="hidden fixed z-50 bottom-80 right-10 p-1 border-0 w-8 h-8 shadow-md bg-black hover:bg-orange-500 text-white text-lg font-semibold transition-colors duration-300 max-md:hidden">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-      <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
-  </svg>
-  <span class="sr-only">Go to top</span>
-</button>
+
 
 
 @livewireScripts
 
-<script>
-    // Get the 'to top' button element by ID
-    var toTopButton = document.getElementById("to-top-button");
 
-    // Check if the button exists
-    if (toTopButton) {
-
-        // On scroll event, toggle button visibility based on scroll position
-        window.onscroll = function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                toTopButton.classList.remove("hidden");
-            } else {
-                toTopButton.classList.add("hidden");
-            }
-        };
-
-        // Function to scroll to the top of the page smoothly
-        window.goToTop = function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        };
-    }
-  </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".sample-slider", {
