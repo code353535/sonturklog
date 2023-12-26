@@ -34,7 +34,8 @@
         crossorigin="anonymous"></script>
    <!-- yatay72890 -->
    <ins class="adsbygoogle"
-        style="display:inline-block;width:728px;height:90px"
+
+        style="display:inline-block;width:728px;height:90px;display:flex;justify-content:left;" data-full-width-responsive="true"
         data-ad-client="ca-pub-7405579499369683"
         data-ad-slot="2282302965"></ins>
    <script>

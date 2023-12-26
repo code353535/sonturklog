@@ -8,16 +8,7 @@
 :root {
     font-family: 'Noto Sans', sans-serif;
 }
-#sidebar-header-top .widget {
-    display: block;
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-}
-#sidebar-header-top .widget .textwidget {
-    text-align: center;
-    display: block;
-}
+
 .oswald {
     font-family: 'Gabarito', sans-serif;
 
