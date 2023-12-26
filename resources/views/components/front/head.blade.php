@@ -30,6 +30,28 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+     crossorigin="anonymous"></script>
+<!-- turklog -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7405579499369683"
+     data-ad-slot="3800749838"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-7405579499369683"
+     data-ad-slot="7471621287"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <meta name="yandex-verification" content="950121826458f0f4" />
         <meta name="google-adsense-account" content="ca-pub-7405579499369683">
