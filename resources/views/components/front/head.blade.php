@@ -35,6 +35,9 @@
         <meta name="google-adsense-account" content="ca-pub-7405579499369683">
         <!-- Google tag (gtag.js) -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NE6QTPCCTY"></script>
+ <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+     crossorigin="anonymous"></script>
+<script>
         <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
         <script type="text/javascript">
            $(document).ready(function () {

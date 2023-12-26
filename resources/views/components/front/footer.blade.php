@@ -147,9 +147,7 @@
 
 
 @livewireScripts
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
-     crossorigin="anonymous"></script>
-<script>
+
     // Get the 'to top' button element by ID
     var toTopButton = document.getElementById("to-top-button");
 
