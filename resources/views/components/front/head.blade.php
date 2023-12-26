@@ -30,17 +30,16 @@
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
-
-     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
-     crossorigin="anonymous"></script>
-<!-- yatay -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7405579499369683"
-     data-ad-slot="5956139885"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+        crossorigin="anonymous"></script>
+   <!-- yatay72890 -->
+   <ins class="adsbygoogle"
+        style="display:inline-block;width:728px;height:90px"
+        data-ad-client="ca-pub-7405579499369683"
+        data-ad-slot="2282302965"></ins>
+   <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <meta name="yandex-verification" content="950121826458f0f4" />
