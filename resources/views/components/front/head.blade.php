@@ -34,7 +34,7 @@
      crossorigin="anonymous"></script>
 <!-- turklog -->
 <ins class="adsbygoogle"
-     style="display:block"
+     style="display:block mx-[170px]"
      data-ad-client="ca-pub-7405579499369683"
      data-ad-slot="3800749838"
      data-ad-format="auto"
