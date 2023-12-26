@@ -8,6 +8,11 @@
 :root {
     font-family: 'Noto Sans', sans-serif;
 }
+.adsbygoogle {
+
+        margin: 170px auto !important;
+
+}
 .oswald {
     font-family: 'Gabarito', sans-serif;
 
