@@ -75,7 +75,7 @@
     </div>
 </div>
 </div>
-
+<div class="flex items-center justify-center lg:mt-8 px-4 mx-4 lg:mx-[170px]">
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -93,4 +93,4 @@
 </script>
 </div>
 </div>
-
+</div>
