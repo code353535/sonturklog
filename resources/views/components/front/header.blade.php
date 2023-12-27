@@ -1,3 +1,14 @@
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
+     crossorigin="anonymous"></script>
+<!-- dikeyreklam -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-7405579499369683"
+     data-ad-slot="4055669194"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 <div x-data="{ Open: false }" class="sticky top-0 z-50 bg-white" x-cloak="false">
     <!-- header -->
 <div class="flex flex-col lg:px-[170px] px-6 max-md:px-0">
