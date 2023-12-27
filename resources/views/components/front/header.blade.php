@@ -75,7 +75,7 @@
     </div>
 </div>
 </div>
-<div class="bg-gray-200 px-4 lg:mx-[170px]">
+
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -93,4 +93,4 @@
 </script>
 </div>
 </div>
-</div>
+

@@ -105,7 +105,6 @@
     @endforeach
 </div>
 
-<div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -123,7 +122,7 @@
 </script>
 </div>
 </div>
-</div>
+
 
 
 <div class="lg:mx-[170px] max-md:mx-4 flex flex-col xl:flex-row md:mt-[30px] gap-4">
@@ -165,7 +164,7 @@
 
 </div>
 
-<div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
+
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -183,7 +182,7 @@
 </script>
 </div>
 </div>
-</div>
+
 
 <div class="lg:mx-[170px] max-md:mx-4 flex flex-col xl:flex-row md:mt-[30px] gap-4">
     <div class="w-full gap-4">
@@ -223,7 +222,7 @@
     </div>
 
     </div>
-    <div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
+
         <div style="text-align:center;margin-bottom:10px;">
             <div style="
                 max-width:970px;
@@ -241,7 +240,7 @@
     </script>
     </div>
     </div>
-    </div>
+
 
     <div class="lg:mx-[170px] max-md:mx-4 flex flex-col xl:flex-row md:mt-[30px] gap-4">
         <div class="w-full gap-4">
@@ -282,7 +281,7 @@
 
         </div>
 
-        <div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
+
             <div style="text-align:center;margin-bottom:10px;">
                 <div style="
                     max-width:970px;
@@ -300,5 +299,5 @@
         </script>
         </div>
         </div>
-        </div>
+
 </x-front.layout>
