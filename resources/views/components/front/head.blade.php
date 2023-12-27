@@ -58,20 +58,4 @@
      />
     </head>
     <body>
-        <div style="text-align:center;margin-bottom:10px;">
-            <div style="
-                max-width:970px;
-                display:block;margin-left:auto;margin-right:auto;
-                text-align: center;">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7405579499369683"
-     crossorigin="anonymous"></script>
-<!-- yatay72890 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:970px;height:90px"
-     data-ad-client="ca-pub-7405579499369683"
-     data-ad-slot="2282302965"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-</div>
+
