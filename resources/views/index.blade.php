@@ -105,7 +105,7 @@
     @endforeach
 </div>
 
-<div class="bg-gray-200 lg:mt-8 mx-4 lg:mx-[170px]">
+<div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -165,7 +165,7 @@
 
 </div>
 
-<div class="bg-gray-200 lg:mt-8 mx-4 lg:mx-[170px]">
+<div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
     <div style="text-align:center;margin-bottom:10px;">
         <div style="
             max-width:970px;
@@ -223,7 +223,7 @@
     </div>
 
     </div>
-    <div class="bg-gray-200 lg:mt-8 mx-4 lg:mx-[170px]">
+    <div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
         <div style="text-align:center;margin-bottom:10px;">
             <div style="
                 max-width:970px;
@@ -282,7 +282,7 @@
 
         </div>
 
-        <div class="bg-gray-200 lg:mt-8 mx-4 lg:mx-[170px]">
+        <div class="bg-gray-200 lg:mt-8 px-4 mx-4 lg:mx-[170px]">
             <div style="text-align:center;margin-bottom:10px;">
                 <div style="
                     max-width:970px;
