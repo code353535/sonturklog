@@ -38,6 +38,7 @@ class Botara extends Command
         libxml_use_internal_errors(true);
 
             $urls = DB::table('feed')
+            ->WhereNotIn('site_id', [2])
                 ->get();
 
 
@@ -49,7 +50,7 @@ class Botara extends Command
 
                     try {
 
-                        $response = Http::timeout(30)
+                        $response = Http::timeout(120)
                         ->get($item->katlink);
 
 
