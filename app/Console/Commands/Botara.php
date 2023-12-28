@@ -38,7 +38,7 @@ class Botara extends Command
         libxml_use_internal_errors(true);
 
             $urls = DB::table('feed')
-            ->WhereNotIn('site_id', [2])
+            ->WhereNotIn('site_id', [1,2])
                 ->get();
 
 
